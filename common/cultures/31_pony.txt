@@ -1,0 +1,34 @@
+equestrian	= {
+	graphical_culture = westerngfx
+
+	alicorn = {
+		primary = EQU
+		}
+	earth = {
+		primary = EQE
+		dynasty_names = {
+			"of Earth Ponies"
+			}
+		}
+	pegasus = {
+		primary = EQP
+		dynasty_names = {
+			"of Pegasi"
+			}
+		}
+	unicorn = {
+		primary = EQC
+		dynasty_names = {
+			"of Unicorns"
+			}
+		}
+	crystal = {
+		primary = EQL
+		dynasty_names = {
+			"Crystalline" "Bejeweled"
+			}
+		}
+	dynasty_names = {
+		"of Alicorns" "of Earth Ponies" "of Pegasi" "of Unicorns" Sombra Faust
+	}
+}

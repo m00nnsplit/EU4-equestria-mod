@@ -1,0 +1,100 @@
+#Country Name: Please see filename.
+
+graphical_culture = northamericagfx
+
+historical_score = 0
+
+color = { 153  204  255 }
+
+historical_idea_groups = {
+	offensive_ideas
+	trade_ideas
+	religious_ideas
+	naval_ideas
+	economic_ideas
+	plutocracy_ideas
+	defensive_ideas
+	spy_ideas
+}
+
+monarch_names = {
+	"Apple #0" = 20
+	"Rainbow #0" = 20
+	"Twilight #0" = 20
+	"Pinkie #0" = 20
+	"Rosie #0" = 15
+	"Sweety #0" = 15
+	"Flim #0" = 15
+	"Flam #0" = 15
+	"Joe #0" = 10
+	"Thunder #0" = 10
+	"Blossom #0" = 10
+	"Lightning #0" = 10
+	"Peach #0" = 10
+	"Daring #0" = 10
+	"Cherry #0" = 10
+	"Dizzy #0" = 10
+	"Golden #0" = 0
+	"Lemon #0" = 0
+	"Lyra #0" = 0
+	"Derpy #0" = 0
+	"Cotton #0" = 0
+	"Berry #0" = 0
+	"Daisy #0" = 0
+	"Lucky #0" = 0
+	"Rose #0" = 0
+	"Tornado #0" = 0
+	"Twinkle #0" = 0
+	"Wild #0" = 0
+	"Merry #0" = 0
+	"Pippin #0" = 0
+	"Meadow #0" = 0
+	"Lily #0" = 0
+	"Caramel #0" = 0
+	"Flash #0" = 0
+	"Fancy #0" = 0
+	"Pound #0" = 0
+	"Snails #0" = 0
+	"Chilly #0" = 0
+	"Ace #0" = 0
+	"Quake #0" = 0
+	"Purple #0" = 0
+    "Serena #0" = 0
+	
+    "Trixie #0" = -1
+    "Silver #0" = -1
+    "Diamond #0" = -1
+}
+
+leader_names = {
+        "Bloom" "Belle" "Bolt"
+        "Cake" "Cloudy" "Cloud"
+        "Dash" "Dust" "Do" "Drops"
+        "d'Egmont"
+        "Fits"
+		"Hooves"
+        "Mare" "Mild"
+        "Pie" "Punch"
+        "Rich"
+        "Sparkle" "Seed"
+        "Thunder" "Twister" "de Toucy" "de Toulonjon"
+}
+
+ship_names = {
+	Acerola Ackee
+	Berry Barbadine
+	Cherry Ceriman Chayote Chenet Canistel Cantaloupe Caimito Calamondin Cherimoya Chayote
+	Date
+	Goumi Gooseberry Genip Gac Garlic Granadilla
+	Jackfruit
+	Macadamia
+	Papaya Pear Peanut
+	Rasperry
+	Snowberry
+	Tamarillo Tamarind
+	Vanilla
+}
+
+army_names = {    
+	 "Army of $PROVINCE$" 
+}

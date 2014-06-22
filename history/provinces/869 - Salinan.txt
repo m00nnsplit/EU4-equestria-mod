@@ -1,0 +1,37 @@
+#869 - Salinan
+
+culture = earth
+religion = celestian
+capital = "Salinan" 
+trade_goods = unknown 
+hre = no 
+base_tax = 4 
+manpower = 1 
+native_size = 5 
+native_ferocity = 1 
+native_hostileness = 3 
+
+1001.1.1 = { discovered_by = EQU }
+1001.1.1 = { discovered_by = EQP }
+1001.1.1 = { discovered_by = EQC }
+1001.1.1 = { discovered_by = EQE }
+
+1542.1.1 = { discovered_by = SPA } # Juan Rodriguez Cabrillo
+1770.1.1 = {	owner = SPA
+	controller = SPA
+	citysize = 355
+	trade_goods = wool 
+} # Don Gaspar de Portolá
+1792.1.1 = {
+	capital = "Yerba Buena"
+	citysize = 1600
+} # British settlement, Yerba Buena (San Francisco) founded by George Vancouver
+1795.1.1 = {
+	citysize = 1200
+	culture = castillian
+	religion = catholic
+	add_core = SPA
+	add_core = MEX
+}
+1800.1.1 = { citysize = 1980 }
+1810.9.16 = { owner = MEX controller = SPA } # Mexican War of Independence

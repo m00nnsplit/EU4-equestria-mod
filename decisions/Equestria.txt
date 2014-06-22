@@ -1,0 +1,88 @@
+country_decisions = {
+
+	pony_the_east_coast = {
+		potential = {
+			tag = EQU
+			government = monarchy # How could a republic construct a royal castle ?
+			NOT = { has_country_flag = capital_at_canterlot }
+		}
+		allow = {
+			owns = 953 # Conoy
+			is core = 953
+			adm = 3 #for temples
+		}
+		effect = {
+			set_country_flag = capital_at_canterlot
+			set_capital = 953
+			add_prestige = 50
+			953 = {
+				change_province_name = "Canterlot"
+				add_base_tax = 3 # Magical money !
+				add_manpower = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	pony_the_iron_pony_competition = {
+		potential = {
+			tag = EQU
+			NOT = { has_country_modifier = iron_pony_competition }
+		}
+		allow = {
+			mil_tech = 4
+			adm_tech = 4
+		}
+		effect = {
+			add_country_modifier = {
+				name = "iron_pony_competition"
+				duration = -1 
+			}
+			add_prestige = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	pony_mane6_secret_services = {
+		potential = {
+			tag = EQU
+			NOT = { has_country_modifier = mane6_secret_services }
+		}
+		allow = {
+			full_idea_group = spy_ideas
+			dip_tech = 10
+		}
+		effect = {
+			add_country_modifier = {
+				name = "mane6_secret_services"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	pony_running_of_the_leaves = {
+		potential = {
+			tag = EQU
+			NOT = { has_country_modifier = running_of_the_leaves }
+		}
+		allow = {
+			adm_tech = 2 # low requirements for early game
+			adm_power = 30
+		}
+		effect = {
+			add_country_modifier = {
+				name = "running_of_the_leaves"
+				duration = 3650
+			}
+			add_adm_power = -30
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

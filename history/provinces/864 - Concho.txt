@@ -1,0 +1,44 @@
+#864 - Concho
+
+culture = navajo 
+religion = animism 
+capital = "Concho" 
+trade_goods = unknown 
+hre = no 
+base_tax = 1 
+manpower = 1 
+native_size = 5 
+native_ferocity = 1 
+native_hostileness = 7 
+
+1001.1.1 = { discovered_by = EQU }
+1001.1.1 = { discovered_by = EQP }
+1001.1.1 = { discovered_by = EQC }
+1001.1.1 = { discovered_by = EQE }
+1001.1.1 = { owner = EQE
+		controller = EQE
+		citysize = 1500
+		culture = earth
+		religion = celestian
+		add_core = EQU
+		add_core = EQE
+		trade_goods = wool
+}
+
+1540.1.1   = { 	discovered_by = SPA
+		owner = SPA
+		controller = SPA
+		citysize = 400
+		religion = catholic 
+		culture = castillian
+		trade_goods = wool 
+	     } # Francisco Vasquez de Coronado
+1565.1.1   = { 	citysize = 1040
+		add_core = SPA
+	     } # Francisco de Ibarra 
+1600.1.1   = { citysize = 1500 } 
+1650.1.1   = { citysize = 1830 } 
+1700.1.1   = { citysize = 2040 } 
+1750.1.1   = { citysize = 2580 add_core = MEX } 
+1800.1.1   = { citysize = 2900 }
+1810.9.16  = { owner = MEX controller = SPA } # Mexican War of Independence

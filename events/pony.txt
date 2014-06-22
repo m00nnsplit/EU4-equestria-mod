@@ -1,0 +1,285 @@
+﻿namespace = pony
+
+# list of event IDs :
+# 1 : doesn't exist for some reason. I guess I planned to do something with it once upon a time in a farway land, but know I have no idea. Edit : I think it was supposed to be an intro event. I'll make two of these, one for Equestria and one for Pegasia. (version 4)
+# 2 : selenite reformation
+# 3, 4 : spread of the reformation when religion is celestian
+# 5 : activates Crystal cores
+# 6 : changes culture in provinces with crystal cores to crystal ponies
+# 7 : asks the player if they want to change to Lunar Republic
+# 8 : spread of the reformation when religion is selenite (added in version 3)
+
+# #############################################################################################################################
+
+# The Selenite reformation. Yay, originality. Let us call it "Luna's Appeal", rather. It will attract cloppers.
+
+country_event = {
+	id = pony.2
+	title = "pony.EVTNAME2"
+	desc = "pony.EVTDESC2"
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		NOT = { is_religion_enabled = selenite }
+		religion = celestian
+		war_exhaustion = 10
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "pony.EVTOPTA2"
+		enable_religion = selenite
+		random_owned_province = {
+			change_religion = selenite
+		}
+		set_country_flag = "selenite_reformation" 
+	}
+}
+
+# Spread of Luna's Appeal
+
+province_event = {
+	id = pony.3
+	title = "pony.EVTNAME3"
+	desc = "pony.EVTDESC3"
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		is_religion_enabled = selenite
+		religion = celestian
+		owner = {
+			NOT = { has_country_flag = capital_at_canterlot }
+			religion = celestian
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		
+		modifier = {
+			factor = 0.70
+			any_neighbor_province = {
+					religion = selenite
+				}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = selenite
+			}
+		}
+	}
+	option = {
+		name = "pony.EVTOPTA3"
+		change_religion = selenite
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 7000
+		}
+	}
+}
+	
+# Same but not in Canterlot if Canterlot has been built (yes, past me was too lazy for if/else structures)
+province_event = {
+	id = pony.4
+	title = "pony.EVTNAME3"
+	desc = "pony.EVTDESC3"
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		is_religion_enabled = selenite
+		religion = celestian
+		owner = {
+			has_country_flag = capital_at_canterlot
+			religion = celestian
+		}
+		NOT = { 
+			province_id = 953 # Canterlot
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		
+		modifier = {
+			factor = 0.70
+			any_neighbor_province = {
+					religion = selenite
+				}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = selenite
+			}
+		}
+	}
+	
+	option = {
+		name = "pony.EVTOPTA3"
+		change_religion = selenite
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 7000
+		}
+	}
+}
+
+# Same if religion is selenite
+
+province_event = {
+	id = pony.8
+	title = "pony.EVTNAME8"
+	desc = "pony.EVTDESC8"
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		is_religion_enabled = selenite
+		religion = celestian
+		owner = {
+			religion = selenite
+			NOT = { has_country_flag = capital_at_canterlot }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		
+		modifier = {
+			factor = 0.70
+			any_neighbor_province = {
+					religion = selenite
+				}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = selenite
+			}
+		}
+	}
+	option = {
+		name = "pony.EVTOPTA8"
+		change_religion = selenite
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 7000
+		}
+	}
+}
+
+# event that asks the player if they want to change for Lunar Republic
+country_event = {
+	id = pony.7
+	title = "pony.EVTNAME7"
+	desc = "pony.EVTDESC7"
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		government = celestian_enlightenment
+		is_religion_enabled = selenite
+		religion = celestian
+	}
+	
+	mean_time_to_happen = {
+		years = 50
+	}
+	
+	option = {
+		name = "pony.EVTOPTA7"
+		change_government = lunar_republic
+		change_religion = selenite
+		add_stability = 1
+	}
+	option = {
+		name = "pony.EVTOPTB7"
+		add_stability = -3
+	}
+}
+
+
+# #############################################################################################################
+
+# Crystal Empire independance events. Here it gains cores on its de jure territory.
+country_event = {
+	id = pony.5
+	title = "pony.EVTNAME5"
+	desc = "pony.EVTDESC5"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		NOT = { exists = EQL }
+		NOT = { has_country_flag = crystal_revolution }
+		is_year = 1650
+		any_owned_province = {
+			limit = { region_name = northern_america }
+			is_core = EQU
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+
+	}
+	
+	option = {
+		name = "pony.EVTOPTA5"
+		set_country_flag = crystal_revolution
+		
+		#northern_america = {
+		#	add_core = EQL
+		#}
+		
+		#EQL = {
+		#	any_owned_province = {
+		#		region_name = { northern_america }
+		#		add_core = EQL
+		#	}
+		#}
+		
+		every_province = {
+			limit = { region_name = northern_america}
+			add_core = EQL
+		}
+		
+	}
+	
+}
+
+# pony provinces with Crystal cores get their culture changed
+
+province_event = {
+	id = pony.6
+	title = "pony.EVTNAME6"
+	desc = "pony.EVTDESC6"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		owner = { has_country_flag = crystal_revolution }
+		is_core = EQL
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+		
+		modifier = {
+			factor = 0.70
+			any_neighbor_province = {
+					culture = crystal
+				}
+		}
+	}
+	
+	option = {
+		name = "pony.EVTOPTA6"
+		change_culture = crystal
+		add_province_modifier = {
+				name = "rebel_sentiment"
+				duration = 3650
+		}
+	}
+}

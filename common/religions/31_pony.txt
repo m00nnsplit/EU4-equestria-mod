@@ -1,0 +1,37 @@
+equestrian = {
+	celestian = {
+		color = { 1 0.4 0.8 }
+		icon = 18
+		allowed_conversion = {
+			selenite
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+		country = {
+			land_morale = 0.5
+		}
+		
+		heretic = { CHRYSALIST  }
+		
+	}
+
+	selenite = {
+		color = { 0 0 1 }
+		icon = 17
+		allowed_conversion = {
+			celestian
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+		country = {
+			global_tax_modifier = 0.05
+			advisor_pool = 1
+		}
+		
+		heretic = { NIGHTMAREMOON }
+		date = 1536.5.1
+		
+	}
+}

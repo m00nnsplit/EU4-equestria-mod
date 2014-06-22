@@ -1,0 +1,32 @@
+#886 - Waco
+
+culture = navajo
+religion = shamanism
+capital = "Waco"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+
+1001.1.1 = { owner = EQN
+		controller = EQN
+		citysize = 1500
+		culture = navajo
+		religion = shamanism
+		trade_goods = grain
+}
+1001.1.1 = { discovered_by = EQP }
+
+1541.1.1  = { discovered_by = SPA }
+1682.1.1  = { owner = SPA controller = SPA citysize = 350 trade_goods = grain }
+1707.1.1  = {	add_core = SPA
+		citysize = 1115
+		culture = castillian
+		religion = catholic
+	    }
+1732.1.1  = { citysize = 1205 }
+1750.1.1  = { citysize = 1500 add_core = MEX }
+1800.1.1  = { citysize = 2080 }
+1810.9.16 = {	owner = MEX
+		controller = SPA
+	    } # Mexican War of Independence

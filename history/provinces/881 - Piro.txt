@@ -1,0 +1,47 @@
+#881 - Piro
+
+culture = pueblo 
+religion = animism 
+capital = "Acoma" 
+trade_goods = unknown 
+hre = no 
+base_tax = 1 
+manpower = 1 
+native_size = 15 
+native_ferocity = 3 
+native_hostileness = 5 
+
+
+1001.1.1 = { discovered_by = EQU }
+1001.1.1 = { discovered_by = EQP }
+1001.1.1 = { discovered_by = EQC }
+1001.1.1 = { discovered_by = EQE }
+1001.1.1 = { owner = EQP
+		controller = EQP
+		citysize = 1500
+		culture = earth
+		religion = celestian
+		add_core = EQU
+		add_core = EQE
+		trade_goods = salt
+}
+
+1541.1.1  = { discovered_by = SPA } # Francisco Vásquez de Coronado
+1598.1.1  = {	owner = SPA
+		controller = SPA
+		citysize = 300
+		culture = castillian
+		religion = catholic
+		trade_goods = salt 
+	    } # First Spanish colonists
+1623.1.1  = { add_core = SPA citysize = 1000 }
+1650.1.1  = { citysize = 1800 }
+1660.1.1  = { revolt_risk = 4 }
+1670.1.1  = { revolt_risk = 5 }
+1672.1.1  = { revolt_risk = 0 }
+1680.1.1  = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # Pueblo revolt
+1692.1.1  = { revolt = {} controller = SPA } # The Spanish reestablished control & the colonists returned
+1700.1.1  = { citysize = 1990 }
+1750.1.1  = { citysize = 2420 add_core = MEX }
+1800.1.1  = { citysize = 2820 }
+1810.9.16 = { owner = MEX controller = SPA } # Mexican War of Independence

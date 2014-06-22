@@ -1,0 +1,38 @@
+celestian_enlightenment = {
+	monarchy = yes
+	valid_for_new_country = no
+	allow_convert = yes
+	
+	# Bonuses :
+	
+	global_spy_defense = 0.5
+	land_morale = 0.3
+	stability_cost_modifier = -0.2
+	}
+	
+pony_anarchy = {
+	republic = yes
+	tribal = yes
+	
+	republican_name = yes
+	royal_marriage = yes
+	
+	#Bonuses :
+	global_revolt_risk = -1
+	}
+
+lunar_republic : {
+	republic = yes
+	republic = yes
+	
+	duration = 5
+	
+	republican_name = yes
+	royal_marriage = no
+	
+	valid_for_new_country = no
+	#allow_convert = no
+	
+	# Bonus
+	stability_cost_modifier = -0.1
+}

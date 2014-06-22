@@ -1,0 +1,33 @@
+#866 - Guaycura
+
+culture = unicorn
+religion = celestian
+capital = "Guaycura" 
+trade_goods = unknown 
+hre = no 
+base_tax = 1 
+manpower = 1 
+native_size = 5 
+native_ferocity = 1 
+native_hostileness = 2 
+
+1533.1.1   = { discovered_by = SPA }
+1535.5.3   = {	owner = SPA
+		controller = SPA
+		capital = "La Paz"
+		citysize = 1320
+		culture = castillian
+		religion = catholic
+		trade_goods = fish 
+	     } # Hernán Cortés claimed the peninsula & founded the city
+1550.1.1   = { citysize = 1587 }
+1560.1.1   = { add_core = SPA }
+1578.1.1   = { discovered_by = ENG } # Drake 
+1600.1.1   = { citysize = 2380 }
+1650.1.1   = { citysize = 2888 }
+1700.1.1   = { citysize = 3800 } 
+1750.1.1   = { citysize = 5890 add_core = MEX } 
+1768.2.3   = { revolt_risk = 4 } # The Jesuits are expelled 
+1769.1.1   = { revolt_risk = 0 } 
+1800.1.1   = { citysize = 10580 }
+1810.9.16  = { owner = MEX controller = SPA } # Mexican War of Independence

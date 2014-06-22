@@ -1,0 +1,21 @@
+country_decisions = {
+
+	pony_become_pegasia = {
+		potential = {
+			tag = EQN
+		}
+		allow = {
+			is_at_war = no
+			NOT = { exists = EQP }
+			culture_group = equestrian
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = EQP
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

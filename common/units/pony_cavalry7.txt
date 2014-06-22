@@ -1,0 +1,13 @@
+# Armored Cavalry
+# balanced
+
+type = cavalry
+unit_type = pony
+
+maneuver = 8
+offensive_morale = 12
+defensive_morale = 10
+offensive_fire = 11
+defensive_fire = 8
+offensive_shock = 9
+defensive_shock = 9

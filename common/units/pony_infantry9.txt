@@ -1,0 +1,12 @@
+# Pony Guard
+
+type = infantry
+unit_type = pony
+
+maneuver = 5
+offensive_morale = 11
+defensive_morale = 10
+offensive_fire = 11
+defensive_fire = 9
+offensive_shock = 10
+defensive_shock = 8

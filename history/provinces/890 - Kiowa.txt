@@ -1,0 +1,39 @@
+#890 - Kiowa
+
+culture = navajo
+religion = shamanism
+capital = "Kiowa"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+
+1001.1.1 = { discovered_by = EQU }
+1001.1.1 = { discovered_by = EQP }
+1001.1.1 = { discovered_by = EQC }
+1001.1.1 = { discovered_by = EQE }
+1001.1.1 = { owner = EQN
+		controller = EQN
+		citysize = 1500
+		culture = navajo
+		religion = celestian
+		add_core = EQN
+		trade_goods = fur
+}
+1541.1.1  = { discovered_by = SPA } # Francisco Vásquez de Coronado
+1610.1.1  = {	owner = SPA
+		controller = SPA
+		citysize = 1200
+		capital = "Santa Fe"
+		culture = castillian
+		religion = catholic
+		trade_goods = fur
+	    } # Pedro de Peralta
+1635.1.1  = { add_core = SPA }
+1650.1.1  = { citysize = 1800 }
+1680.1.1  = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # Pueblo revolt
+1692.1.1  = { revolt = {} controller = SPA } # The Spanish reestablished control & the colonists returned
+1700.1.1  = { citysize = 4980 }
+1750.1.1  = { citysize = 5685 add_core = MEX }
+1800.1.1  = { citysize = 6640 }
+1810.9.16 = { owner = MEX controller = SPA } # Mexican War of Independence

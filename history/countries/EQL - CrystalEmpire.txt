@@ -1,0 +1,6 @@
+government = lunar_republic
+mercantilism = 0.1
+primary_culture = crystal
+religion = selenite
+technology_group = pony
+capital = 991			# Ottawa

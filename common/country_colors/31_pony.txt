@@ -1,0 +1,42 @@
+# Equestria
+EQU = {
+    color1= { 62 122 189  }
+    color2= { 255 153 204 }
+    color3= { 62 122 189  }
+}
+
+# Ponyland	
+EQE = {
+    color1= { 62 122 189  }
+    color2= { 153  255  204 }
+    color3= { 62 122 189  }
+}
+	
+# Pegasia
+EQP = {
+    color1= { 62 122 189  }
+    color2= { 153  204  255 }
+    color3= { 62 122 189  }
+}
+	
+# Pegasian colonies
+EQN = {
+    color1= { 62 122 189  }
+    color2= { 153  204  255 }
+    color3= { 62 122 189  }
+}
+	
+# Unicornia
+EQC = {
+    color1= { 62 122 189  }
+    color2= { 255  153  153 }
+    color3= { 62 122 189  }
+}
+
+# Crystal Empire
+
+EQL = {
+    color1= { 255 255 255  }
+    color2= { 204  102  255 }
+    color3= { 255 255 255  }
+}

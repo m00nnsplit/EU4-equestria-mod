@@ -1,0 +1,35 @@
+#891 - Jicarilla
+
+culture = navajo
+religion = shamanism
+capital = "Jicarilla"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+
+1001.1.1 = { discovered_by = EQU }
+1001.1.1 = { discovered_by = EQP }
+1001.1.1 = { discovered_by = EQC }
+1001.1.1 = { discovered_by = EQE }
+1001.1.1 = { owner = EQN
+		controller = EQN
+		citysize = 1500
+		culture = navajo
+		religion = celestian
+		add_core = EQN
+		trade_goods = grain
+}
+1541.1.1  = { discovered_by = SPA } # Francisco Vásquez de Coronado
+1682.1.1  = {	owner = SPA
+		controller = SPA
+		citysize = 400
+		culture = castillian
+		religion = catholic
+		trade_goods = grain
+	    }
+1707.1.1  = { add_core = SPA citysize = 1240 }
+1732.1.1  = { citysize = 1500 }
+1750.1.1  = { citysize = 1880 add_core = MEX }
+1800.1.1  = { citysize = 2000 }
+1810.9.16 = { owner = MEX controller = SPA } # Mexican War of Independence

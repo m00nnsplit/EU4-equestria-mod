@@ -1,0 +1,6 @@
+EQU = "countries/Equestria.txt"
+EQE = "countries/Ponyland.txt"
+EQP = "countries/Pegasia.txt"
+EQC = "countries/Unicornia.txt"
+EQN = "countries/PegasianColonies.txt"
+EQL = "countries/CrystalEmpire.txt"

@@ -1,0 +1,39 @@
+#889 - Arapaho
+
+culture = navajo
+religion = shamanism
+capital = "Arapaho"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 1
+native_size = 25
+native_ferocity = 3
+native_hostileness = 9 
+
+1001.1.1 = { discovered_by = EQU }
+1001.1.1 = { discovered_by = EQP }
+1001.1.1 = { discovered_by = EQC }
+1001.1.1 = { discovered_by = EQE }
+1001.1.1 = { owner = EQN
+		controller = EQN
+		citysize = 1500
+		culture = pegasus
+		religion = celestian
+		add_core = EQN
+		trade_goods = fur
+}
+1541.1.1  = { discovered_by = SPA } # Francisco Vásquez de Coronado
+1610.1.1  = {	owner = SPA
+		controller = SPA
+		citysize = 240
+	   	religion = catholic
+	   	culture = castillian
+	    }
+1635.1.1  = { citysize = 1800 add_core = SPA trade_goods = fur }
+1680.1.1  = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # Pueblo revolt
+1692.1.1  = { revolt = {} controller = SPA } # Spain reestablished control & the colonists return
+1700.1.1  = { citysize = 4500 }
+1750.1.1  = { citysize = 6250 add_core = MEX }
+1800.1.1  = { citysize = 8222 }
+1810.9.16 = { owner = MEX controller = SPA } # Mexican War of Independence

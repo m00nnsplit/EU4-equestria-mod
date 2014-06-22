@@ -1,0 +1,22 @@
+##################################################
+# My Little Pony : Equestria mod
+##################################################
+
+iron_pony_competition = {
+	global_manpower_modifier = -0.05
+	army_tradition = 0.2
+}
+
+mane6_secret_services = {
+	global_spy_defence = 0.7
+	global_spy_defence = 0.3
+	discovered_relations_impact = -0.25
+}
+
+running_of_the_leaves = {
+	production_efficiency = 0.10
+}
+
+south_american_element = {
+	dip_tech_cost_modifier = -0.2
+}

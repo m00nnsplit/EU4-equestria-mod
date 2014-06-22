@@ -1,0 +1,32 @@
+government = celestian_enlightenment
+mercantilism = 0.1
+primary_culture = alicorn
+culture_group_union = equestrian
+religion = celestian
+technology_group = pony
+capital = 868 # Chumash
+
+1444.11.10 = {
+	monarch = {
+		name = "Spike I"
+		dynasty = "of Alicorns"
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}
+
+1467.6.16 = {
+	heir = {
+		name = "Twilight"
+		monarch_name = "Twilight I"
+		dynasty = "of Alicorns"
+		birth_date = 1457.2.13
+		death_date = 1482.3.27
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 2
+		female = yes
+	}
+}

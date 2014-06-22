@@ -1,0 +1,12 @@
+# Pony Discipline
+
+type = infantry
+unit_type = pony
+
+maneuver = 4
+offensive_morale = 9
+defensive_morale = 9
+offensive_fire = 7
+defensive_fire = 6
+offensive_shock = 8
+defensive_shock = 7

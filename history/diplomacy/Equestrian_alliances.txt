@@ -1,0 +1,30 @@
+#Unicornia
+vassal = {
+	first = EQU
+	second = EQC
+	start_date = 1399.1.1
+	end_date = 1549.12.22
+}
+
+#Ponyland
+vassal = {
+	first = EQU
+	second = EQE
+	start_date = 1399.1.1
+	end_date = 1549.12.22
+}
+
+#Pegasia - Pegasian Colonies
+union = {
+	first = EQP
+	second = EQN
+	start_date = 1424.11.10
+	end_date = 1604.11.10
+}
+
+alliance = {
+	first = EQP
+	second = EQN
+	start_date = 1444.11.10
+	end_date = 1604.11.10
+}

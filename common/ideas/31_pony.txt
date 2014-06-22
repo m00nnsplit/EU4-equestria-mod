@@ -1,0 +1,123 @@
+EQU_ideas = {
+	start = {
+		colonists = 1
+		auto_explore_adjacent_to_colony = yes
+	}
+	
+	bonus = {
+		tolerance_heretic = 3
+		tolerance_heathen = 3
+	}	
+
+	trigger = {
+			tag = EQU
+	}
+	free = yes		#will be added at load.
+	
+	celestian_enlightenment = {
+		technology_cost = -0.15
+	}
+	native_frienship = {
+		reduced_native_attacks = yes
+		diplomatic_reputation = 2
+	}
+	celestian_zeal = {
+		global_missionary_strength = 0.03
+	}
+	mobilisation = {
+		global_tax_modifier = 0.1
+		global_manpower_modifier = 0.1
+		global_revolt_risk = 0.5
+	}
+	tradition_speed = {
+		leader_land_manuever = 1
+		discipline = 0.05
+	}
+	economic_magic = {
+		production_efficiency = 0.1
+		inflation_reduction = 0.1
+	}
+	to_enemy_land = {
+		naval_morale = 0.25
+		leader_naval_manuever = 1
+	}
+}
+
+EQP_ideas = {
+	start = {
+		discipline = 0.20
+		land_forcelimit_modifier = 1.0
+	}
+	bonus = {
+		stability_cost_modifier = -0.3
+	}
+	trigger = {
+		tag = EQP
+	}
+	free = yes		#will be added at load.
+
+	peg_expansion = {
+		core_creation = -0.33
+		inflation_reduction = 0.2
+	}
+	peg_mobilisation = {
+		global_manpower_modifier = 1.0
+		recover_army_morale_speed = 0.02
+	}
+	peg_training = {
+		cavalry_power = 0.15
+		infantry_power = 0.15
+	}
+	peg_tradition = {
+		army_tradition_decay = -0.01
+		land_morale = 1.0
+	}
+	peg_pride = {
+		army_tradition = 0.5
+	}
+	peg_speed = {
+		manpower_recovery_speed = 0.33
+		global_regiment_recruit_speed = -0.10
+	}
+	peg_advancement = {
+		technology_cost = -0.2
+	}
+}
+
+EQN_ideas = {
+	start = {
+		colonists = 1
+		may_explore = yes
+	}
+	bonus = {
+		stability_cost_modifier = -0.3
+	}
+	trigger = {
+		tag = EQN
+	}
+	free = yes		#will be added at load.
+
+	peg_col_expansion = {
+		cb_on_primitives = yes
+	}
+	peg_col_glory_to_pegasia = {
+		global_colonial_growth = 33
+	}
+	peg_col_colonial_efforts = {
+		colonists = 1
+	}
+	peg_tradition = {
+		army_tradition_decay = -0.01
+		land_morale = 1.0
+	}
+	peg_pride = {
+		army_tradition = 0.5
+	}
+	peg_speed = {
+		manpower_recovery_speed = 0.33
+		global_regiment_recruit_speed = -0.10
+	}
+	peg_advancement = {
+		technology_cost = -0.2
+	}
+}

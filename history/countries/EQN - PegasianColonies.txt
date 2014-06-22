@@ -1,0 +1,14 @@
+primary_culture = pegasus
+government = pony_anarchy
+technology_group = north_american
+religion = celestian
+capital = 889 #Arapaho
+
+1604.11.10 = {
+	monarch = {
+		name = "Shawnee Cider"
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}

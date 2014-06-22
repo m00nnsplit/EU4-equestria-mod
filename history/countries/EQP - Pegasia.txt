@@ -1,0 +1,18 @@
+primary_culture = pegasus
+government = pony_anarchy
+technology_group = north_american
+religion = celestian
+capital = 875 #Yaqui
+
+1444.11.10 = {
+	monarch = {
+		name = "Dizzy Belle"
+		female = yes
+		adm = 1
+		dip = 2
+		mil = 5
+	}
+}
+
+1444.11.10 = { leader = {	name = "Lightning Dash"	type = general		rank = 3	fire = 1	shock = 6	manuever = 6	siege = 0	death_date = 1489.1.11 } }
+1444.11.10 = { leader = {	name = "Dark Bubbles"	type = general		rank = 3	fire = 0	shock = 8	manuever = 4	siege = 0	death_date = 1463.1.08 } }

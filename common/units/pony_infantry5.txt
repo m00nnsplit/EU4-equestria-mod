@@ -1,0 +1,13 @@
+# Firearms tactics
+# balanced
+
+type = infantry
+unit_type = pony
+
+maneuver = 4
+offensive_morale = 6
+defensive_morale = 5
+offensive_fire = 3
+defensive_fire = 4
+offensive_shock = 5
+defensive_shock = 4
