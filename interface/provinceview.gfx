@@ -1,6 +1,11 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_trade_post_button"
+		texturefile = "gfx/interface/trade_post_button.dds"
+	}
+
+	spriteType = {
 		name = "GFX_prov_modifier_bg"
 		texturefile = "gfx/interface/ideas_EU4/prov_modifier_bg.dds"
 		loadType = "INGAME"
