@@ -204,45 +204,40 @@ country_event = {
 
 # #############################################################################################################
 
-# Crystal Empire independance events. Here it gains cores on its de jure territory.
 country_event = {
 	id = pony.5
 	title = "pony.EVTNAME5"
 	desc = "pony.EVTDESC5"
 	picture = ANGRY_MOB_eventPicture
-	
+	fire_only_once = yes
 	trigger = {
 		NOT = { exists = EQL }
 		NOT = { has_country_flag = crystal_revolution }
+		
 		is_year = 1650
-		any_owned_province = {
-			limit = { region_name = northern_america }
-			is_core = EQU
+		
+		OR = {
+			tag = EQC
+			tag = EQE
+			tag = EQN
+			tag = EQP
+			tag = EQU
+		}
+		
+		northern_america = {
+			is_core = ROOT
 		}
 	}
 	
 	mean_time_to_happen = {
 		months = 120
-
 	}
 	
 	option = {
 		name = "pony.EVTOPTA5"
 		set_country_flag = crystal_revolution
 		
-		#northern_america = {
-		#	add_core = EQL
-		#}
-		
-		#EQL = {
-		#	any_owned_province = {
-		#		region_name = { northern_america }
-		#		add_core = EQL
-		#	}
-		#}
-		
-		every_province = {
-			limit = { region_name = northern_america}
+		northern_america = {
 			add_core = EQL
 		}
 		
