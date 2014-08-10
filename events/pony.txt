@@ -213,14 +213,17 @@ country_event = {
 	trigger = {
 		NOT = { exists = EQL }
 		NOT = { has_country_flag = crystal_revolution }
+		
 		is_year = 1650
+		
 		OR = {
-		tag = EQC
-		tag = EQE
-		tag = EQN
-		tag = EQP
-		tag = EQU
+			tag = EQC
+			tag = EQE
+			tag = EQN
+			tag = EQP
+			tag = EQU
 		}
+		
 		northern_america = {
 			is_core = ROOT
 		}
@@ -228,7 +231,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 120
-
 	}
 	
 	option = {
