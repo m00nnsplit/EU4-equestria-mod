@@ -11,6 +11,7 @@ groups = {
 		modifier = 0
 		start_level = 3
 		cav_to_inf_ratio = 0.5
+		trade_company = yes
 	}
 	eastern = {
 		modifier = 0.20
@@ -31,25 +32,21 @@ groups = {
 		modifier = 0.5
 		start_level = 2
 		cav_to_inf_ratio = 0.5
-		power = -1
 	}
 	chinese = {
 		modifier = 0.6
 		start_level = 2
 		cav_to_inf_ratio = 0.5
-		power = -1
 	}
 	nomad_group = {
 		modifier = 0.75
 		start_level = 3
 		cav_to_inf_ratio = 1.0
-		power = -1
 	}
 	sub_saharan = {
 		modifier = 1.0
 		start_level = 1
 		cav_to_inf_ratio = 0.5
-		power = -2
 	}
 	north_american = {
 		modifier = 2.5
@@ -60,13 +57,11 @@ groups = {
 		modifier = 1.5
 		start_level = 1
 		cav_to_inf_ratio = 0.5
-		power = -2
 	}
 	south_american = {
 		modifier = 1.5
 		start_level = 1
 		cav_to_inf_ratio = 0.5
-		power = -2
 	}	
 	pony = {
 		modifier = 0
