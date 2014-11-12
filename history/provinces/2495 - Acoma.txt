@@ -1,0 +1,49 @@
+# No previous file for Acoma
+
+owner = PUE
+controller = PUE
+add_core = PUE
+is_city = yes
+culture = pueblo
+religion = totemism
+capital = "Acoma"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2
+discovered_by = north_american
+discovered_by = pony
+
+1001.1.1 = { discovered_by = EQU }
+1001.1.1 = { discovered_by = EQP }
+1001.1.1 = { discovered_by = EQC }
+1001.1.1 = { discovered_by = EQE }
+1001.1.1 = { owner = EQP
+		controller = EQP
+		citysize = 1500
+		culture = pegasus
+		religion = celestian
+		add_core = EQU
+		add_core = EQP
+		trade_goods = wool
+}
+
+1541.1.1  = { discovered_by = SPA } # Francisco Vásquez de Coronado
+1598.1.1  = {	owner = SPA
+		controller = SPA
+		trade_goods = wool
+ 	    } # conquered by Spain
+1623.1.1  = { add_core = SPA }
+1650.1.1  = { citysize = 1820 }
+1680.8.10  = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # Pueblo revolt
+1680.8.21  = {	owner = PUE
+		controller = PUE } #Spanish abandon their Pueblo settlements
+1692.9.13  = { 	owner = SPA 
+		controller = SPA 
+		remove_core = PUE 
+		culture = castillian 
+		religion = catholic } # The Spanish reestablished control 
+1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence

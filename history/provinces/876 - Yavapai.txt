@@ -15,13 +15,14 @@ native_hostileness = 5
 1001.1.1 = { discovered_by = EQP }
 1001.1.1 = { discovered_by = EQC }
 1001.1.1 = { discovered_by = EQE }
-1001.1.1 = { owner = EQP
-		controller = EQP
+1001.1.1 = { owner = EQE
+		controller = EQE
 		citysize = 1500
 		culture = earth
 		religion = celestian
 		add_core = EQU
 		add_core = EQE
+		add_core = EQP
 		trade_goods = salt
 }
 

@@ -1,10 +1,35 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_create_new_client_state_button"
+		texturefile = "gfx/interface/create_new_client_state_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_dec_autonomy_button"
+		texturefile = "gfx/interface/dec_autonomy_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_inc_autonomy_button"
+		texturefile = "gfx/interface/inc_autonomy_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_transfer_occupation_bg"
+		texturefile = "gfx/interface/transfer_occupation_bg.dds"
+	}
+
+	spriteType = {
 		name = "GFX_trade_post_button"
 		texturefile = "gfx/interface/trade_post_button.dds"
 	}
-
+	
+	spriteType = {
+		name = "GFX_river_indicator_icon"
+		texturefile = "gfx/interface/river_indicator.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_prov_modifier_bg"
 		texturefile = "gfx/interface/ideas_EU4/prov_modifier_bg.dds"
@@ -34,6 +59,13 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_warscore_icon"
+		texturefile = "gfx/interface/warscore_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}	
+
+	spriteType = {
 		name = "GFX_province_religion_button"
 		texturefile = "gfx/interface/province_religion_button.dds"
 		loadType = "INGAME"
@@ -44,6 +76,12 @@ spriteTypes = {
 		name = "GFX_province_view_religion"
 		texturefile = "gfx//interface//province_view_religion.tga"
 		noOfFrames = 18
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_province_view_center_of_reformation"
+		texturefile = "gfx//interface//center_of_reformation.tga"
+		noOfFrames = 2
 		loadType = "INGAME"
 		allwaystransparent = yes
 	}
@@ -70,6 +108,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_add_core_button"
 		texturefile = "gfx/interface/add_core_button.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_abandon_core_button"
+		texturefile = "gfx/interface/abandon_core_button.dds"
 		loadType = "INGAME"
 		transparencecheck = yes
 	}
@@ -112,6 +157,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_provinceview_bg_large"
 		texturefile = "gfx/interface/provinceview_bg_large.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_client_state_selection_bg"
+		texturefile = "gfx/interface/temp/client_state_selection_bg.tga"
 		loadType = "INGAME"
 		transparencecheck = yes
 	}
@@ -214,6 +266,11 @@ spriteTypes = {
 		name = "GFX_hre_indicators"
 		texturefile = "gfx/interface/hre_indicators.dds"
 		noOfFrames = 4
+	}
+	
+	spriteType = {
+		name = "GFX_client_state_button"
+		texturefile = "gfx/interface/client_state_button.dds"
 	}
 	
 	spriteType = {
@@ -425,7 +482,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_resource_icon"
 		texturefile = "gfx//interface//resources.tga"
-		noOfFrames = 22
+		noOfFrames = 25
 		loadType = "INGAME"
 		norefcount = yes
 	}
@@ -433,7 +490,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_resource_icon_transparent"
 		texturefile = "gfx//interface//resources.tga"
-		noOfFrames = 22
+		noOfFrames = 25
 		loadType = "INGAME"
 		norefcount = yes
 		allwaystransparent = yes
@@ -509,6 +566,15 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {	
+		name = "GFX_unit_naming"
+		texturefile = "gfx//interface//unit_naming.tga"
+		noOfFrames = 1
+		loadType = "INGAME"
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
 
 	spriteType = {	
 		name = "GFX_building_bg"
