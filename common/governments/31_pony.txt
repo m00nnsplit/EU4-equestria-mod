@@ -8,7 +8,7 @@ celestian_enlightenment = {
 	global_spy_defense = 0.5
 	land_morale = 0.3
 	stability_cost_modifier = -0.2
-	}
+}
 	
 pony_anarchy = {
 	republic = yes
@@ -17,9 +17,10 @@ pony_anarchy = {
 	republican_name = yes
 	royal_marriage = yes
 	
-	#Bonuses :
-	global_revolt_risk = -1
-	}
+	# Bonus
+	#global_revolt_risk = -1 #removed in 1.8 because of the unrest system thing
+	global_unrest = -1
+}
 
 lunar_republic : {
 	republic = yes

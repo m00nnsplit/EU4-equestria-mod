@@ -22,6 +22,7 @@ native_hostileness = 5
 		religion = celestian
 		add_core = EQU
 		add_core = EQE
+		add_core = EQP
 		trade_goods = salt
 }
 

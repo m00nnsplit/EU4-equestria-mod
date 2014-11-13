@@ -63,6 +63,11 @@ groups = {
 		start_level = 1
 		cav_to_inf_ratio = 0.5
 	}	
+	andean = {
+		modifier = 1.5
+		start_level = 1
+		cav_to_inf_ratio = 0.5
+	}	
 	pony = {
 		modifier = 0
 		start_level = 1
