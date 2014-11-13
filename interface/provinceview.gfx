@@ -24,7 +24,7 @@ spriteTypes = {
 		name = "GFX_trade_post_button"
 		texturefile = "gfx/interface/trade_post_button.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_river_indicator_icon"
 		texturefile = "gfx/interface/river_indicator.dds"
@@ -57,7 +57,7 @@ spriteTypes = {
 		loadType = "INGAME"
 		transparencecheck = yes
 	}
-
+	
 	spriteType = {
 		name = "GFX_warscore_icon"
 		texturefile = "gfx/interface/warscore_icon.dds"
@@ -75,7 +75,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_province_view_religion"
 		texturefile = "gfx//interface//province_view_religion.tga"
-		noOfFrames = 18
+		noOfFrames = 19
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -111,7 +111,7 @@ spriteTypes = {
 		loadType = "INGAME"
 		transparencecheck = yes
 	}
-
+	
 	spriteType = {
 		name = "GFX_abandon_core_button"
 		texturefile = "gfx/interface/abandon_core_button.dds"
@@ -267,7 +267,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/hre_indicators.dds"
 		noOfFrames = 4
 	}
-	
+
 	spriteType = {
 		name = "GFX_client_state_button"
 		texturefile = "gfx/interface/client_state_button.dds"
@@ -575,7 +575,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 
-
+	
 	spriteType = {	
 		name = "GFX_building_bg"
 		texturefile = "gfx//interface//building_plain_bg.tga"
