@@ -83,7 +83,6 @@ spriteTypes = {
 		texturefile = "gfx//interface//center_of_reformation.tga"
 		noOfFrames = 2
 		loadType = "INGAME"
-		allwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_tradegood_info_bg"
