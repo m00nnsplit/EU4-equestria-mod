@@ -18,7 +18,7 @@ native_hostileness = 4
 1001.1.1 = { owner = EQC
 		controller = EQC
 		citysize = 1500
-		culture = unicorn
+		culture = earth
 		religion = celestian
 		add_core = EQU
 		add_core = EQC
@@ -27,18 +27,3 @@ native_hostileness = 4
 }
 
 1774.1.1   = {	discovered_by = SPA
-		owner = SPA
-		controller = SPA
-		citysize = 350
-		culture = castillian
-		religion = catholic
-		trade_goods = grain 
-	     } # Colonists began to arrive
-1775.1.1   = { revolt_risk = 4 } # The natives rebelled
-1776.1.1   = { revolt_risk = 0 }
-1799.1.1   = { add_core = SPA add_core = MEX citysize = 1170 }
-1800.1.1   = { citysize = 1890 }
-1810.9.16  = {	discovered_by = MEX
-		owner = MEX
-		controller = SPA
-	     } # Mexican War of Independence

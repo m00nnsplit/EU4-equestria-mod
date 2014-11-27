@@ -1,0 +1,134 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_monarchism_icon"
+		texturefile = "gfx/interface/monarchism_icon_strip.dds"
+		noOfFrames = 2		
+	}
+
+	spriteType = {
+		name = "GFX_republic_icon"
+		texturefile = "gfx/interface/republic_icon_strip.dds"
+		noOfFrames = 2		
+	}
+
+	spriteType = {
+		name = "GFX_statist_vs_orangist_frame"
+		texturefile = "gfx/interface/statist_vs_orangist_frame.dds"
+	}
+
+	spriteType = {
+		name = "GFX_statist_vs_orangist_overlay"
+		texturefile = "gfx/interface/statist_vs_orangist_overlay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_support_heir_button"
+		texturefile = "gfx/interface/support_heir_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_modifier_frame"
+		texturefile = "gfx//interface//country_modifier_frame.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_eligible_noneligible_strip"
+		texturefile = "gfx//interface//eligible_noneligible_strip.dds"
+		transparencecheck = yes	
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_tech_group_strip"
+		texturefile = "gfx//interface//tech_group_strip.dds"
+		transparencecheck = yes	
+		noOfFrames = 13
+	}	
+
+	spriteType = {
+		name = "GFX_monarch_cultures_icon"
+		texturefile = "gfx//interface//monarch_cultures_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}	
+	spriteType = {
+		name = "GFX_policies_icon"
+		texturefile = "gfx//interface//policies_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	spriteType = {
+		name = "GFX_mapmode_acceptedculture_icon"
+		texturefile = "gfx//interface//mapmode_acceptedculture_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}	
+
+	spriteType = {
+		name = "GFX_national_focus"
+		texturefile = "gfx//interface//icon_national_focus.dds"
+		noOfFrames = 2
+	}	
+	
+	spriteType = {
+		name = "GFX_icon_national_focus_adm"
+		texturefile = "gfx//interface//icon_national_focus_adm.dds"
+		noOfFrames = 2
+	}	
+	
+	spriteType = {
+		name = "GFX_icon_national_focus_mil"
+		texturefile = "gfx//interface//icon_national_focus_mil.dds"
+		noOfFrames = 2
+	}		
+
+	spriteType = {
+		name = "GFX_icon_national_focus_dip"
+		texturefile = "gfx//interface//icon_national_focus_dip.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_court_view_select_advisor_bg"
+		texturefile = "gfx//interface//court_view_select_advisor_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+
+	spriteType = {
+		name = "GFX_choose_rivals_bg"
+		texturefile = "gfx//interface//choose_rivals_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}	
+	
+	spriteType = {
+		name = "GFX_court_view_bg"
+		texturefile = "gfx//interface//country_court_view_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	
+	spriteType = {
+		name = "GFX_court_union"
+		texturefile = "gfx//interface//icon_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+		
+	progressbartype = {
+		name = "GFX_court_power_progress"
+		color = { 0.0 1.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		size = { x = 120 y = 16 }
+		effectFile = "gfx//FX//progress.lua"
+	}	
+	
+	spriteType = {
+		name = "GFX_revolution_target"
+		texturefile = "gfx//interface//revolution_target.dds"
+	}
+}
