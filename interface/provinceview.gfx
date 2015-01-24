@@ -1,6 +1,11 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_transfer_occupation_button"
+		texturefile = "gfx/interface/transfer_occupation_button.dds"
+	}
+
+	spriteType = {
 		name = "GFX_create_new_client_state_button"
 		texturefile = "gfx/interface/create_new_client_state_button.dds"
 	}
