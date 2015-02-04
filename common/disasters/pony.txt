@@ -1,0 +1,61 @@
+selenite_reformation = {
+	potential = {
+		NOT = { has_country_flag = had_selenite_reformation }
+		NOT = { is_religion_enabled = selenite }
+		religion = celestian
+		num_of_cities = 10
+	}
+
+	
+	
+	can_start = {
+		has_any_disaster = no
+		OR =
+		{
+			NOT = { stability = 0 }
+			war_exhaustion = 3
+		}
+	}
+	progress = {
+		modifier = {
+			factor = 0.3
+			war_exhaustion = 3
+		}
+		modifier = {
+			factor = 0.5
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 0.5
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 1
+			war_exhaustion = 15
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 20
+		}
+		modifier = {
+			factor = 1
+			is_bankrupt = yes
+		} 
+		modifier = {
+			factor = 1
+			has_idea_group = religious_ideas
+		}
+
+	}
+	
+
+	modifier = {
+		global_unrest = 7
+		legitimacy = -3
+	}	
+	
+	
+	on_start = pony.2
+	
+}
+

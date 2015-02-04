@@ -17,6 +17,18 @@ running_of_the_leaves = {
 	production_efficiency = 0.10
 }
 
-south_american_element = {
-	dip_tech_cost_modifier = -0.2
+war_on_luna = {
+	global_unrest = 3
+	land_morale = 0.25
+	global_manpower_modifier = 0.25
+	global_heretic_missionary_strength = 0.02
+	tolerance_own = 1
+	tolerance_heretic = -2
+}
+
+tolerance_on_luna = {
+	stability_cost_modifier = 0.5
+	global_heretic_missionary_strength = -0.01
+	tolerance_heretic = 2
+	
 }
