@@ -48,14 +48,30 @@ selenite_reformation = {
 
 	}
 	
-
+	can_end = { #note : we're not supposed to be using that, there are events (pony.7,10,11) for that kind of things !
+		NOT = { num_of_revolts = 1 }
+		NOT = {
+			has_spawned_rebels = heretic_rebels
+		}
+		stability = 3
+		NOT =  { war_exhaustion = 1 }
+		NOT = {
+				any_owned_province = {
+					has_owner_religion = no
+				}		
+		}
+	}
+	
 	modifier = {
-		global_unrest = 7
-		legitimacy = -3
+		global_unrest = 10
+		legitimacy = -2
 	}	
 	
 	
 	on_start = pony.2
+	on_end = pony.12
 	
+	on_monthly = {
+	}
 }
 

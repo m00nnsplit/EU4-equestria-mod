@@ -11,6 +11,7 @@
 # 9 : follow-up to pony.7, asking if the player would prefer an aggressive or a tolerant approach (added in version 5)
 # 10 : an end to the selenite disaster if the player is Celestian (added in version 5)
 # 11 : a much quicker end to said disaster if the player is Selenite (added in version 5)
+# 12 : another "ending" event just in case the event chain is faulty (added in version 5)
 
 # #############################################################################################################################
 
@@ -41,6 +42,7 @@ country_event = {
 			change_religion = selenite
 		}
 		set_country_flag = "selenite_reformation_flag" 
+		add_stability = -1 
 	}
 }
 
@@ -183,7 +185,7 @@ country_event = {
 		is_religion_enabled = selenite
 		religion = celestian
 		has_country_flag = selenite_reformation_flag
-		NOT = { has_country_flag = refused_selenite_conversion" }
+		NOT = { has_country_flag = refused_selenite_conversion }
 	}
 	
 	mean_time_to_happen = {
@@ -223,13 +225,12 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 6
+		months = 1
 	}
 	
 	option = {
 		name = "pony.EVTOPTA9"
 		add_country_modifier = war_on_luna
-		
 	}
 	option = {
 		name = "pony.EVTOPTB9"
@@ -257,7 +258,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		years = 15
+		years = 5
 	}
 	
 	option = {
@@ -286,7 +287,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 6
+		months = 1
 	}
 	
 	option = {
@@ -297,6 +298,33 @@ country_event = {
 		clr_country_flag = selenite_reformation_flag
 		end_disaster = selenite_reformation
 		add_stability = 3
+	}
+}
+
+# event triggered when the selenite disaster ends
+country_event = {
+	id = pony.12
+	title = "pony.EVTNAME12"
+	desc = "pony.EVTDESC12"
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_religion_enabled = selenite
+		religion = selenite
+		has_country_flag = selenite_reformation_flag
+	}
+	
+	option = {
+		name = "pony.EVTOPTA12"
+		remove_country_modifier = war_on_luna
+		remove_country_modifier = tolerance_on_luna
+		clr_country_flag = refused_selenite_conversion
+		clr_country_flag = selenite_reformation_flag
+		end_disaster = selenite_reformation
+		add_stability = 2
+		add_legitimacy = 50
 	}
 }
 
