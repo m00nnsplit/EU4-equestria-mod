@@ -22,7 +22,7 @@ pony_anarchy = {
 	global_unrest = -1
 }
 
-lunar_republic : {
+lunar_republic = {
 	republic = yes
 	republic = yes
 	

@@ -178,7 +178,7 @@ technology = {
 
 	training_fields = yes
 		
-	march = yes
+	march_building = yes
 	
 	combat_width = 1
 }
@@ -329,7 +329,11 @@ technology = {
 	enable = afsharid_reformed_infantry	
 	enable = muscovite_soldaty	
 	enable = polish_tercio
-	enable = asian_mass_infantry		
+	enable = asian_mass_infantry	
+	enable = bantu_gunpowder_warfare	
+	enable = niger_kongolese_gunpowder_warfare	
+	enable = adal_gunpowder_warfare		
+	enable = ethiopian_gunpowder_warfare	
 	enable = pony_cavalry4
 }
 
@@ -356,6 +360,10 @@ technology = {
 	
 	cavalry_shock		=	1.0
 	supply_limit		= 	0.5	
+	
+	enable = maharathan_cavalry		
+	enable = manchu_banner		
+	enable = african_swarm
 }
 
 technology = {
@@ -370,12 +378,9 @@ technology = {
 	enable = swedish_gallop	
 	enable = sikh_hit_and_run
 	enable = bhonsle_infantry	
-	enable = african_swarm
 	enable = ottoman_reformed_spahi		
 	enable = mamluk_musket_charge 
 	enable = afsharid_reformed	
-	enable = maharathan_cavalry	
-	enable = manchu_banner	
 	enable = leather_cannon	
 	
 	combat_width = 2
@@ -394,14 +399,14 @@ technology = {
 	enable = austrian_tercio   
 	enable = swedish_gustavian		
 	enable = scottish_highlander	
-	enable = russian_petrine	
+
 	enable = saxon_infantry	
 	enable = ottoman_reformed_janissary	
 	enable = asian_musketeer	
-	enable = bantu_gunpowder_warfare	
-	enable = niger_kongolese_gunpowder_warfare	
-	enable = adal_gunpowder_warfare		
-	enable = ethiopian_gunpowder_warfare
+
+
+
+
 	enable = incan_guerilla_warfare	
 	enable = iroquois_rifle_scout
 	enable = peruvian_guerilla_warfare
@@ -421,7 +426,7 @@ technology = {
 	
 	infantry_fire		= 	0.5
 		
-	enable = swivel_cannon	
+	enable = swivel_cannon		
 	enable = pony_cavalry5	
 
 	combat_width = 2
@@ -435,7 +440,7 @@ technology = {
 	sprite_level = 3
 	
 	infantry_shock 		=	0.5
-	
+
 	enable = pony_infantry6
 }
 
@@ -487,6 +492,7 @@ technology = {
 	enable = ali_bey_reformed_infantry
 	enable = indian_shock_cavalry	
 	enable = chinese_dragoon	
+	enable = russian_petrine	
 	enable = pony_infantry7	
 }
 
@@ -558,8 +564,8 @@ technology = {
 	#Bayonet
 	supply_limit		=	0.5
 	infantry_fire		= 	0.5	
-	
-	
+
+
 }
 
 technology = {
