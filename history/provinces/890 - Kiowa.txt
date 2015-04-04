@@ -17,7 +17,6 @@ manpower = 1
 		citysize = 1500
 		culture = navajo
 		religion = celestian
-		add_core = EQN
 		trade_goods = fur
 }
 1541.1.1  = { discovered_by = SPA } # Francisco Vásquez de Coronado
