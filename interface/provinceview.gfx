@@ -1,19 +1,6 @@
 spriteTypes = {
 
 	spriteType = {
-		name = "GFX_client_select_bg"
-		texturefile = "gfx/interface/client_select_bg.dds"
-	}
-	spriteType = {
-		name = "GFX_client_create_bg"
-		texturefile = "gfx/interface/client_create_bg.dds"
-	}
-	spriteType = {
-		name = "GFX_client_create_shield_bg"
-		texturefile = "gfx/interface/client_create_shield_bg.dds"
-	}
-	
-	spriteType = {
 		name = "GFX_transfer_occupation_button"
 		texturefile = "gfx/interface/transfer_occupation_button.dds"
 	}
@@ -32,11 +19,6 @@ spriteTypes = {
 		name = "GFX_inc_autonomy_button"
 		texturefile = "gfx/interface/inc_autonomy_button.dds"
 	}
-	
-	spriteType = {
-		name = "GFX_transfer_occupation_button"
-		texturefile = "gfx/interface/transfer_occupation_button.dds"
-	}	
 
 	spriteType = {
 		name = "GFX_transfer_occupation_bg"
@@ -98,7 +80,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_province_view_religion"
 		texturefile = "gfx//interface//province_view_religion.tga"
-		noOfFrames = 24
+		noOfFrames = 19
 		loadType = "INGAME"
 	}
 	spriteType = {

@@ -42,13 +42,10 @@ groups = {
 		modifier = 0.75
 		start_level = 3
 		cav_to_inf_ratio = 1.0
-		nation_designer_trigger = {
-			government = steppe_horde
-		}
 	}
 	sub_saharan = {
-		modifier = 0.6
-		start_level = 2
+		modifier = 1.0
+		start_level = 1
 		cav_to_inf_ratio = 0.5
 	}
 	north_american = {
@@ -62,21 +59,20 @@ groups = {
 		cav_to_inf_ratio = 0.5
 	}
 	south_american = {
-		modifier = 2.5
+		modifier = 1.5
 		start_level = 1
 		cav_to_inf_ratio = 0.5
-	}
+	}	
 	andean = {
 		modifier = 1.5
 		start_level = 1
 		cav_to_inf_ratio = 0.5
-		valid_for_nation_designer = no
 	}	
 	pony = {
 		modifier = 0
 		start_level = 1
 		cav_to_inf_ratio = 1
-	}	
+	}
 }
 
 tables = {

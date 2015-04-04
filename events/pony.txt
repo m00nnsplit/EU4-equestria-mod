@@ -3,15 +3,11 @@
 # list of event IDs :
 # 1 : doesn't exist for some reason. I guess I planned to do something with it once upon a time in a farway land, but know I have no idea. Edit : I think it was supposed to be an intro event. I'll make two of these, one for Equestria and one for Pegasia. (version 4)
 # 2 : selenite reformation
-# 3, 4 : spread of the reformation when religion is celestian (pony.8 if selenite)
+# 3, 4 : spread of the reformation when religion is celestian
 # 5 : activates Crystal cores
 # 6 : changes culture in provinces with crystal cores to crystal ponies
 # 7 : asks the player if they want to change to Lunar Republic
 # 8 : spread of the reformation when religion is selenite (added in version 3)
-# 9 : follow-up to pony.7, asking if the player would prefer an aggressive or a tolerant approach (added in version 5)
-# 10 : an end to the selenite disaster if the player is Celestian (added in version 5)
-# 11 : a much quicker end to said disaster if the player is Selenite (added in version 5)
-# 12 : another "ending" event just in case the event chain is faulty (added in version 5)
 
 # #############################################################################################################################
 
@@ -22,8 +18,6 @@ country_event = {
 	title = "pony.EVTNAME2"
 	desc = "pony.EVTDESC2"
 	picture = RELIGION_eventPicture
-	
-	is_triggered_only = yes
 	
 	trigger = {
 		NOT = { is_religion_enabled = selenite }
@@ -41,8 +35,7 @@ country_event = {
 		random_owned_province = {
 			change_religion = selenite
 		}
-		set_country_flag = "selenite_reformation_flag" 
-		add_stability = -1 
+		set_country_flag = "selenite_reformation" 
 	}
 }
 
@@ -64,7 +57,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		years = 500
+		months = 500
 		
 		modifier = {
 			factor = 0.70
@@ -73,9 +66,9 @@ province_event = {
 				}
 		}
 		modifier = {
-			factor = 0.1 #yup, drastic
+			factor = 0.5
 			owner = {
-				has_country_flag = selenite_reformation_flag
+				religion = selenite
 			}
 		}
 	}
@@ -110,7 +103,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		years = 500
+		months = 500
 		
 		modifier = {
 			factor = 0.70
@@ -119,9 +112,9 @@ province_event = {
 				}
 		}
 		modifier = {
-			factor = 0.1 #yup, drastic
+			factor = 0.5
 			owner = {
-				has_country_flag = selenite_reformation_flag
+				religion = selenite
 			}
 		}
 	}
@@ -154,13 +147,19 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		years = 500
+		months = 500
 		
 		modifier = {
 			factor = 0.70
 			any_neighbor_province = {
 					religion = selenite
 				}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = selenite
+			}
 		}
 	}
 	option = {
@@ -184,12 +183,10 @@ country_event = {
 		government = celestian_enlightenment
 		is_religion_enabled = selenite
 		religion = celestian
-		has_country_flag = selenite_reformation_flag
-		NOT = { has_country_flag = refused_selenite_conversion }
 	}
 	
 	mean_time_to_happen = {
-		months = 6
+		years = 50
 	}
 	
 	option = {
@@ -197,136 +194,13 @@ country_event = {
 		change_government = lunar_republic
 		change_religion = selenite
 		add_stability = 1
-		end_disaster = selenite_reformation
-		
 	}
 	option = {
 		name = "pony.EVTOPTB7"
 		add_stability = -3
-		set_country_flag = "refused_selenite_conversion"
 	}
 }
 
-# follow-up to pony.7 : we refused to convert.. Let's wreck their asses or get all tolerant
-country_event = {
-	id = pony.9
-	title = "pony.EVTNAME9"
-	desc = "pony.EVTDESC9"
-	picture = RELIGION_eventPicture
-	
-	trigger = {
-		government = celestian_enlightenment
-		is_religion_enabled = selenite
-		religion = celestian
-		has_country_flag = refused_selenite_conversion
-		NOT = { has_country_modifier = war_on_luna }
-		NOT = { has_country_modifier = tolerance_on_luna }
-		
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	option = {
-		name = "pony.EVTOPTA9"
-		add_country_modifier = war_on_luna
-	}
-	option = {
-		name = "pony.EVTOPTB9"
-		add_country_modifier = tolerance_on_luna
-	}
-}
-
-# ending the selenite_reformation disaster as celestian
-country_event = {
-	id = pony.10
-	title = "pony.EVTNAME10"
-	desc = "pony.EVTDESC10"
-	picture = RELIGION_eventPicture
-	
-	trigger = {
-		government = celestian_enlightenment
-		is_religion_enabled = selenite
-		religion = celestian
-		has_country_flag = selenite_reformation_flag
-		OR = {
-			has_country_modifier = war_on_luna
-			has_country_modifier = tolerance_on_luna
-		}
-		religious_unity = 0.8 
-	}
-	
-	mean_time_to_happen = {
-		years = 5
-	}
-	
-	option = {
-		name = "pony.EVTOPTA10"
-		remove_country_modifier = war_on_luna
-		remove_country_modifier = tolerance_on_luna
-		clr_country_flag = refused_selenite_conversion
-		clr_country_flag = selenite_reformation_flag
-		end_disaster = selenite_reformation
-		add_stability = 3
-	}
-}
-
-# you decided to convert to Selenite. Not fun.
-country_event = {
-	id = pony.11
-	title = "pony.EVTNAME11"
-	desc = "pony.EVTDESC11"
-	picture = RELIGION_eventPicture
-	
-	trigger = {
-		government = celestian_enlightenment
-		is_religion_enabled = selenite
-		religion = selenite
-		has_country_flag = selenite_reformation_flag
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	option = {
-		name = "pony.EVTOPTA11"
-		remove_country_modifier = war_on_luna
-		remove_country_modifier = tolerance_on_luna
-		clr_country_flag = refused_selenite_conversion
-		clr_country_flag = selenite_reformation_flag
-		end_disaster = selenite_reformation
-		add_stability = 3
-	}
-}
-
-# event triggered when the selenite disaster ends
-country_event = {
-	id = pony.12
-	title = "pony.EVTNAME12"
-	desc = "pony.EVTDESC12"
-	picture = RELIGION_eventPicture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		is_religion_enabled = selenite
-		religion = selenite
-		has_country_flag = selenite_reformation_flag
-	}
-	
-	option = {
-		name = "pony.EVTOPTA12"
-		remove_country_modifier = war_on_luna
-		remove_country_modifier = tolerance_on_luna
-		clr_country_flag = refused_selenite_conversion
-		clr_country_flag = selenite_reformation_flag
-		end_disaster = selenite_reformation
-		add_stability = 2
-		add_legitimacy = 50
-	}
-}
 
 # #############################################################################################################
 
