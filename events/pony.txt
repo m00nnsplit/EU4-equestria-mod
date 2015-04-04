@@ -8,6 +8,47 @@
 # 6 : changes culture in provinces with crystal cores to crystal ponies
 # 7 : asks the player if they want to change to Lunar Republic
 # 8 : spread of the reformation when religion is selenite (added in version 3)
+# 13: event firing at the start asking you if you want to improve relations with either Unicornia or Ponyland
+
+# #############################################################################################################################
+
+# improve relations with Unicornia or Ponyland (when vassals)
+country_event = {
+	id = pony.13
+	title = "pony.EVTNAME13"
+	desc = "pony.EVTDESC13"
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EQU ;
+		EQC = { vassal_of = EQU }
+		EQE = { vassal_of = EQU }
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "pony.EVTOPTA13"
+		add_country_modifier = {
+				name = "improved_dip_reputation"
+				duration = 3650
+		}
+		EQC = { add_opinion = { who = EQU modifier = "pony_eased_vassal_relations" } }
+	}
+	
+	option = {
+		name = "pony.EVTOPTB13"
+		add_country_modifier = {
+				name = "improved_dip_reputation"
+				duration = 3650
+		}
+		EQE = { add_opinion = { who = EQU modifier = "pony_eased_vassal_relations" } }
+	}
+}
 
 # #############################################################################################################################
 
@@ -204,6 +245,8 @@ country_event = {
 
 # #############################################################################################################
 
+
+# activates crystal cores
 country_event = {
 	id = pony.5
 	title = "pony.EVTNAME5"
