@@ -94,6 +94,7 @@ province_event = {
 		owner = {
 			NOT = { has_country_flag = capital_at_canterlot }
 			religion = celestian
+                        is_year < 1550
 		}
 	}
 	
@@ -133,6 +134,7 @@ province_event = {
 	trigger = {
 		is_religion_enabled = selenite
 		religion = celestian
+                is_year < 1550
 		owner = {
 			has_country_flag = capital_at_canterlot
 			religion = celestian
@@ -181,6 +183,7 @@ province_event = {
 	trigger = {
 		is_religion_enabled = selenite
 		religion = celestian
+                is_year < 1550
 		owner = {
 			religion = selenite
 			NOT = { has_country_flag = capital_at_canterlot }
