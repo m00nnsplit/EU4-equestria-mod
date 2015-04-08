@@ -18,7 +18,7 @@ country_decisions = {
 			953 = {
 				change_province_name = "Canterlot"
 				add_base_tax = 3 # Magical money !
-				add_manpower = 1
+				add_manpower = 100
 			}
 		}
 		ai_will_do = {
