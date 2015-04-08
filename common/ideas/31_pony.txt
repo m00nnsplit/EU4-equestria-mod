@@ -42,7 +42,6 @@ EQU_ideas = {
 		leader_naval_manuever = 1
 	}
 }
-
 EQP_ideas = {
 	start = {
 		discipline = 0.20
@@ -121,3 +120,42 @@ EQN_ideas = {
 		technology_cost = -0.2
 	}
 }
+EQL_ideas = {
+        start = {
+                cavalry_power = 0.10
+                core_creation = -0.25
+        }
+        bonus = {
+                diplomatic_reputation = 2
+        }
+        free = yes
+        
+        sombra_fear = {
+                land_forcelimit_modifier = 1.0
+                naval_forcelimit_modifier = 1.0
+        }
+        love_princess = {
+                tolerance_heathen = 3
+                religious_unity = 0.25
+        }
+        spread_crystal = {
+                colonists = 1
+                auto_explore_adjacent_to_colony = yes
+        }
+        shining_armour = {
+                discipline = 0.15
+                land_leader_fire = 1
+        }
+        fear_free = {
+                infantry_power = 0.15
+                stability_cost_modifier = -0.3
+        }
+        crystal_heart = {
+                core_creation = -0.25
+                global_missionary_strength = 0.03
+        }
+        truely_independant = {
+                diplomatic_relations = 2
+                technology_cost = -0.10
+        }
+  }
