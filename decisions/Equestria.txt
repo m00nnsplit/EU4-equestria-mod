@@ -85,4 +85,17 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	pony_the_lunar_republic = {
+	        potential = {
+	                tag = EQU
+	                government = monarchy
+	                religion = selenite
+	                NOT = { has_country_flag = capital_at_canterlot }
+	        }
+	        effect = {
+	                change_government = lunar_republic
+	                add_stability = 1
+	        }
+	}
+	
 }
