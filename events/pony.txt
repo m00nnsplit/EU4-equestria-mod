@@ -9,6 +9,7 @@
 # 7 : asks the player if they want to change to Lunar Republic
 # 8 : spread of the reformation when religion is selenite (added in version 3)
 # 13: event firing at the start asking you if you want to improve relations with either Unicornia or Ponyland
+# 14: event that spreads the other equestrian countries across the country
 
 # #############################################################################################################################
 
@@ -321,3 +322,36 @@ province_event = {
 		}
 	}
 }
+province_event = {
+        id = pony.14
+        title = "pony.EVTNAME14"
+        desc = "pony.EVTDESC14"
+        picture = BAD_WITH_MONARCH_eventPicture
+        
+        
+        trigger = {
+                any_owned_province = { NOT = capital } culture = alicorn
+                is_core = EQU
+        }
+        
+        mean_time_to_happen = {
+                days = 1
+        }
+        
+        option = {
+                name = "pony.EVTOPTA14"
+                change_culture = earth
+                change_stored_admin = 5
+        }
+        option = {
+                name = "pony.EVTOPTB14
+                change_culture = unicorn
+                change_stored_diplo = 5
+        }
+        option = {
+                name = "pony.EVTOPTC14"
+                change_culture = pegasus
+                change_stored_military = 5
+        }
+}
+
