@@ -1,5 +1,4 @@
 # Pony trained troops
-# balanced
 
 type = infantry
 unit_type = pony

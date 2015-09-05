@@ -1,44 +1,16 @@
-# country_decisions = { # note : this decision has been replaced with a special casus belli for version 4
-
-	# pony_steal_enlightenment = {
-		# potential = {
-			# tag = EQP
-			# exists = EQU
-			# NOT = { technology_group = pony }
-		# }
-		# allow = {
-			# EQU = {
-				# capital_scope = { controlled_by = EQP }
-			# }
-			# adm = 3
-		# }
-		# effect = {
-			# add_prestige = 100
-			# change_technology_group = pony
-			# change_unit_type = pony
-			# add_stability = -6
-			# }
-		
-		# ai_will_do = {
-			# factor = 1
-		# }
-		# ai_importance = 400
-	# }
-# }
-
-country_decisions = { # to be used in combination with the new CB that makes EQU your vassal
+country_decisions = {
 
 	pony_steal_enlightenment = {
 		potential = {
-			religion_group = equestrian
+			tag = EQP
 			exists = EQU
 			NOT = { technology_group = pony }
 		}
 		allow = {
 			EQU = {
-				vassal_of = ROOT
+				capital_scope = { controlled_by = EQP }
 			}
-			adm = 3
+			adm_tech = 3
 		}
 		effect = {
 			add_prestige = 100

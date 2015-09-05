@@ -1,13 +1,12 @@
 # Earth run tactic
-# balanced
 
 type = cavalry
 unit_type = pony
 
 maneuver = 4
-offensive_morale = 4
+offensive_morale = 7
 defensive_morale = 2
 offensive_fire = 1
 defensive_fire = 0
-offensive_shock = 3
-defensive_shock = 1
+offensive_shock = 4
+defensive_shock = 2

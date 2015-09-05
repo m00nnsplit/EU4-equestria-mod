@@ -7,19 +7,19 @@ equestrian	= {
 	earth = {
 		primary = EQE
 		dynasty_names = {
-			"of Earth Ponies"
+			"of The Earth Ponies"
 			}
 		}
 	pegasus = {
 		primary = EQP
 		dynasty_names = {
-			"of Pegasi"
+			"of The Pegasi"
 			}
 		}
 	unicorn = {
 		primary = EQC
 		dynasty_names = {
-			"of Unicorns"
+			"of The Unicorns"
 			}
 		}
 	crystal = {
@@ -29,6 +29,6 @@ equestrian	= {
 			}
 		}
 	dynasty_names = {
-		"of Alicorns" "of Earth Ponies" "of Pegasi" "of Unicorns" Sombra Faust
+		"of The Alicorns" "of The Earth Ponies" "of The Pegasi" "of The Unicorns" Sombra Faust
 	}
 }

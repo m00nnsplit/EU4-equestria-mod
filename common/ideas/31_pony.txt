@@ -15,11 +15,12 @@ EQU_ideas = {
 	free = yes		#will be added at load.
 	
 	celestian_enlightenment = {
-		technology_cost = -0.15
+		technology_cost = -0.2
 	}
 	native_frienship = {
 		reduced_native_attacks = yes
 		diplomatic_reputation = 2
+		global_colonial_growth = 20
 	}
 	celestian_zeal = {
 		global_missionary_strength = 0.03
@@ -67,44 +68,6 @@ EQP_ideas = {
 	peg_training = {
 		cavalry_power = 0.15
 		infantry_power = 0.15
-	}
-	peg_tradition = {
-		army_tradition_decay = -0.01
-		land_morale = 1.0
-	}
-	peg_pride = {
-		army_tradition = 0.5
-	}
-	peg_speed = {
-		manpower_recovery_speed = 0.33
-		global_regiment_recruit_speed = -0.10
-	}
-	peg_advancement = {
-		technology_cost = -0.2
-	}
-}
-
-EQN_ideas = {
-	start = {
-		colonists = 1
-		may_explore = yes
-	}
-	bonus = {
-		stability_cost_modifier = -0.3
-	}
-	trigger = {
-		tag = EQN
-	}
-	free = yes		#will be added at load.
-
-	peg_col_expansion = {
-		cb_on_primitives = yes
-	}
-	peg_col_glory_to_pegasia = {
-		global_colonial_growth = 33
-	}
-	peg_col_colonial_efforts = {
-		colonists = 1
 	}
 	peg_tradition = {
 		army_tradition_decay = -0.01

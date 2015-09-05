@@ -1,13 +1,12 @@
 # Armored Cavalry
-# balanced
 
 type = cavalry
 unit_type = pony
 
 maneuver = 8
-offensive_morale = 12
-defensive_morale = 10
-offensive_fire = 11
-defensive_fire = 8
+offensive_morale = 9
+defensive_morale = 5
+offensive_fire = 4
+defensive_fire = 3
 offensive_shock = 9
-defensive_shock = 9
+defensive_shock = 6

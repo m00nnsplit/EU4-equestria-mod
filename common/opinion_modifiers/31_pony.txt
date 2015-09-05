@@ -1,5 +1,0 @@
-# used for pony.13 : getting better relations with either unicornia or ponyland
-pony_eased_vassal_relations = {
-	opinion = 200
-	yearly_decay = 4
-}

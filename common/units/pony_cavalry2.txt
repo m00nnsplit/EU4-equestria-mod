@@ -1,5 +1,4 @@
 # Stampede tactic
-# balanced
 
 type = cavalry
 unit_type = pony

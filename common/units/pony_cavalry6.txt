@@ -1,13 +1,12 @@
 # Pegasi maneuvers
-# balanced
 
 type = cavalry
 unit_type = pony
 
 maneuver = 8
-offensive_morale = 7
+offensive_morale = 9
 defensive_morale = 3
-offensive_fire = 6
-defensive_fire = 2
+offensive_fire = 4
+defensive_fire = 1
 offensive_shock = 6
-defensive_shock = 3
+defensive_shock = 2

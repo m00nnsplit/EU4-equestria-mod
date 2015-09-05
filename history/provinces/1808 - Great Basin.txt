@@ -1,5 +1,0 @@
-discovered_by = north_american
-discovered_by = EQU
-discovered_by = EQP
-discovered_by = EQC
-discovered_by = EQE

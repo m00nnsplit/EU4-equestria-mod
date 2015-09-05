@@ -1,5 +1,4 @@
 # Pony Cavalry
-# balanced
 
 type = cavalry
 unit_type = pony
