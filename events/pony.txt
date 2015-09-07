@@ -260,15 +260,15 @@ country_event = {
 		
 		is_year = 1650
 		OR = {
-		-			tag = EQC
--			tag = EQE
--			tag = EQN
--			tag = EQP
--			tag = EQU
--		}
--		
--		northern_america = {
--			is_core = ROOT
+			tag = EQC
+			tag = EQE
+			tag = EQN
+			tag = EQP
+			tag = EQU
+		}
+		
+		northern_america = {
+			is_core = ROOT
 		}
 	}
 	
