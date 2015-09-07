@@ -1,5 +1,58 @@
 ﻿namespace = pony
 
+# list of event IDs :
+# 1 : doesn't exist for some reason. I guess I planned to do something with it once upon a time in a farway land, but know I have no idea. Edit : I think it was supposed to be an intro event. I'll make two of these, one for Equestria and one for Pegasia. (version 4)
+# 2 : selenite reformation
+# 3, 4 : spread of the reformation when religion is celestian
+# 5 : activates Crystal cores
+# 6 : changes culture in provinces with crystal cores to crystal ponies
+# 7 : asks the player if they want to change to Lunar Republic
+# 8 : spread of the reformation when religion is selenite (added in version 3)
+# 13: event firing at the start asking you if you want to improve relations with either Unicornia or Ponyland
+
+# #############################################################################################################################
+
+# improve relations with Unicornia or Ponyland (when vassals)
+country_event = {
+	id = pony.13
+	title = "pony.EVTNAME13"
+	desc = "pony.EVTDESC13"
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EQU ;
+		EQC = { vassal_of = EQU }
+		EQE = { vassal_of = EQU }
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "pony.EVTOPTA13"
+		add_country_modifier = {
+				name = "improved_dip_reputation"
+				duration = 3650
+		}
+		EQC = { add_opinion = { who = EQU modifier = "pony_eased_vassal_relations" } }
+	}
+	
+	option = {
+		name = "pony.EVTOPTB13"
+		add_country_modifier = {
+				name = "improved_dip_reputation"
+				duration = 3650
+		}
+		EQE = { add_opinion = { who = EQU modifier = "pony_eased_vassal_relations" } }
+	}
+}
+
+# #############################################################################################################################
+
+
 #The Selenite reformation. Yay, originality. Let us call it "Luna's Appeal", rather. It will attract cloppers.
 
 country_event = {
@@ -45,7 +98,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 500
 		
 		modifier = {
 			factor = 0.70
@@ -65,12 +118,12 @@ province_event = {
 		change_religion = selenite
 		add_province_modifier = {
 			name = "religious_zeal_at_conv"
-			duration = 7000
+			duration = 5000
 		}
 	}
 }
 	
-# Same but not in Canterlot if Canterlot has been built
+# Same but not in Canterlot if Canterlot has been built (yes, past me was too lazy for if/else structures)
 
 province_event = {
 	id = pony.4
@@ -81,14 +134,17 @@ province_event = {
 	trigger = {
 		is_religion_enabled = selenite
 		religion = celestian
-		has_country_flag = capital_at_canterlot
+		owner = {
+			has_country_flag = capital_at_canterlot
+			religion = celestian
+		}
 		NOT = { 
 			province_id = 953 # Canterlot
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 500
 		
 		modifier = {
 			factor = 0.70
@@ -109,11 +165,55 @@ province_event = {
 		change_religion = selenite
 		add_province_modifier = {
 			name = "religious_zeal_at_conv"
+			duration = 5000
+		}
+	}
+}
+
+# Same if religion is selenite
+
+province_event = {
+	id = pony.8
+	title = "pony.EVTNAME8"
+	desc = "pony.EVTDESC8"
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		is_religion_enabled = selenite
+		religion = celestian
+		owner = {
+			religion = selenite
+			NOT = { has_country_flag = capital_at_canterlot }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		
+		modifier = {
+			factor = 0.70
+			any_neighbor_province = {
+					religion = selenite
+				}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = selenite
+			}
+		}
+	}
+	option = {
+		name = "pony.EVTOPTA8"
+		change_religion = selenite
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
 			duration = 7000
 		}
 	}
 }
 
+# event that asks the player if they want to change for Lunar Republic
 country_event = {
 	id = pony.7
 	title = "pony.EVTNAME7"
@@ -145,168 +245,42 @@ country_event = {
 
 ##############################################################################################################
 
+# activates crystal cores
 # Crystal Empire independance events. Here it gains cores on its de jure territory.
 country_event = {
 	id = pony.5
 	title = "pony.EVTNAME5"
 	desc = "pony.EVTDESC5"
 	picture = ANGRY_MOB_eventPicture
+	fire_only_once = yes
 	
 	trigger = {
 		NOT = { exists = EQL }
 		NOT = { has_country_flag = crystal_revolution }
-		EQL = {
-			NOT = {
-				OR = {
-					is_core = 1006			# Chipewyan
-					is_core = 1011			# Woods Cree
-					is_core = 1010			# Manitoba
-					is_core = 1008   		# Winnipeg
-					is_core = 1009			# Atikaki
-					is_core = 1005			# Swampee Cree
-					is_core = 1004			# Attawapiskat
-					is_core = 910			# Chippewa
-					is_core = 909			# Mandan
-					is_core = 908			# Minnesota
-					is_core = 913			# Fox
-					is_core = 912			# Sauk
-					is_core = 911			# Menominee
-					is_core = 1001			# Sault
-					is_core = 1002			# Abitbi
-					is_core = 1003			# Moose Cree
-					is_core = 991			# Ottawa
-					is_core = 988			# Huron
-					is_core = 989			# Ontario
-					is_core = 987			# Niagara
-					is_core = 914			# Winnebago
-					is_core = 992			# Algonquin
-					is_core = 993			# Hochelega Seriously these Canadian provinces have weird names
-					is_core = 990			# Kwedech
-					is_core = 971			# Abnaki
-					is_core = 985			# Micmac
-					is_core = 986			# Kespek
-					is_core = 984			# Acadia
-					is_core = 983			# Epekwitk
-					is_core = 1000			# Cree
-					is_core = 999			# Nunavik
-					is_core = 998			# Ungava
-					is_core = 997			# Labrador
-					is_core = 996			# Innu
-					is_core = 981			# Taqamkuk
-					is_core = 980			# Beothuk the Barbarian
-					is_core = 995			# Atikamekw
-					is_core = 993			# Hochelega
-					is_core = 994			# Stadacona
-				}
-			}
-		}
+		
 		is_year = 1650
 		OR = {
-			owns = 991		# Ottawa
-			owns = 988			# Huron
+		-			tag = EQC
+-			tag = EQE
+-			tag = EQN
+-			tag = EQP
+-			tag = EQU
+-		}
+-		
+-		northern_america = {
+-			is_core = ROOT
 		}
 	}
 	
 	mean_time_to_happen = {
 		months = 120
-
-		modifier = {
-			factor = 0.9
-			economic_ideas = 6
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { economic_ideas = 4 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { economic_ideas = 2 }
-		}
-		modifier = {
-			factor = 0.9
-			NOT = { stability = 0 }
-		}
-		modifier = {
-			factor = 0.9
-			NOT = { stability = -1 }
-		}
-		modifier = {
-			factor = 0.9
-			NOT = { stability = -2 }
-		}
-		modifier = {
-			factor = 1.1
-			stability = 1
-		}
-		modifier = {
-			factor = 1.1
-			stability = 2
-		}
-		modifier = {
-			factor = 1.1
-			stability = 3
-		}
-		modifier = {
-			factor = 0.95
-			NOT = { adm = 2 }
-		}
-		modifier = {
-			factor = 0.85
-			NOT = { adm = 1 }
-		}
-		modifier = {
-			factor = 0.95
-			is_year = 1660
-		}
-		modifier = {
-			factor = 0.85
-			is_year = 1680
-		}
 	}
 	
 	option = {
 		name = "pony.EVTOPTA5"
 		set_country_flag = crystal_revolution
-		EQL = {
-			add_core = 1006			# Chipewyan
-			add_core = 1011			# Woods Cree
-			add_core = 1010			# Manitoba
-			add_core = 1008   		# Winnipeg
-			add_core = 1009			# Atikaki
-			add_core = 1005			# Swampee Cree
-			add_core = 1004			# Attawapiskat
-			add_core = 910			# Chippewa
-			add_core = 909			# Mandan
-			add_core = 908			# Minnesota
-			add_core = 913			# Fox
-			add_core = 912			# Sauk
-			add_core = 911			# Menominee
-			add_core = 1001			# Sault
-			add_core = 1002			# Abitbi
-			add_core = 1003			# Moose Cree
-			add_core = 991			# Ottawa
-			add_core = 988			# Huron
-			add_core = 989			# Ontario
-			add_core = 987			# Niagara
-			add_core = 914			# Winnebago
-			add_core = 992			# Algonquin
-			add_core = 993			# Hochelega Seriously these Canadian provinces have weird names
-			add_core = 990			# Kwedech
-			add_core = 971			# Abnaki
-			add_core = 985			# Micmac
-			add_core = 986			# Kespek
-			add_core = 984			# Acadia
-			add_core = 983			# Epekwitk
-			add_core = 1000			# Cree
-			add_core = 999			# Nunavik
-			add_core = 998			# Ungava
-			add_core = 997			# Labrador
-			add_core = 996			# Innu
-			add_core = 981			# Taqamkuk
-			add_core = 980			# Beothuk the Barbarian
-			add_core = 995			# Atikamekw
-			add_core = 993			# Hochelega
-			add_core = 994			# Stadacona
+		northern_america = {
+			add_core = EQL
 		}
 	}
 }
@@ -320,7 +294,7 @@ province_event = {
 	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
-		has_country_flag = crystal_revolution
+		owner = { has_country_flag = crystal_revolution }
 		is_core = EQL
 	}
 	
@@ -341,7 +315,7 @@ province_event = {
 		add_province_modifier = {
 				name = "rebel_sentiment"
 				duration = 3650
-			}
+			
 		}
 	}
 }

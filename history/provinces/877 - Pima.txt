@@ -28,7 +28,6 @@ discovered_by = north_american
 		add_core = EQU
 		add_core = EQE
 		trade_goods = salt
-	add_core = SPA
 }
 
 1541.1.1 = { discovered_by = SPA } # Francisco Vásquez de Coronado

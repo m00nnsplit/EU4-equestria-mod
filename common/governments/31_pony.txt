@@ -7,17 +7,17 @@ celestian_enlightenment = {
 	
 	rank = {
 		1 = {
-			global_spy_defense = 0.2
+			global_spy_defence = 0.2
 			land_morale = 0.1
 			stability_cost_modifier = -0.2
 		}
 		2 = {
-			global_spy_defense = 0.35
+			global_spy_defence = 0.35
 			land_morale = 0.3
 			stability_cost_modifier = -0.2
 		}
 		3 = {
-			global_spy_defense = 0.5
+			global_spy_defence = 0.5
 			land_morale = 0.3
 			stability_cost_modifier = -0.5
 		}
@@ -34,13 +34,13 @@ pony_anarchy = {
 	#Bonuses :
 	rank = {
 		1 = {
-			global_revolt_risk = -1
+			global_unrest = -1
 		}
 		2 = {
-			global_revolt_risk = -1.5
+			global_unrest = -1.5
 		}
 		3 = {
-			global_revolt_risk = -2
+			global_unrest = -2
 		}
 	}
 }

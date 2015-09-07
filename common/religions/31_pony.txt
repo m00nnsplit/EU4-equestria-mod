@@ -1,5 +1,4 @@
 equestrian = {
-	defender_of_faith = yes
 	can_form_personal_unions = yes
 
 

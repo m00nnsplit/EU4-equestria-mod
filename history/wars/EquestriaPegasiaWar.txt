@@ -1,9 +1,9 @@
 name = "Pegasian war of Independance" 
-#casus_belli = cb_conquest type = take_capital_conquest
+#casus_belli = cb_independence_war
 war_goal = {
-	type = take_claim
-	casus_belli = cb_conquest
-	province = 876 # Yavapai
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = EQP # Pegasia
 }
 
 1430.11.10 = {
@@ -12,7 +12,7 @@ war_goal = {
 }
 
 # Peace
-1440.11.10 = {
+1444.11.10 = {
 	rem_attacker = EQP
 	rem_defender = EQU
 }

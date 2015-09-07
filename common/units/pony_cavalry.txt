@@ -1,7 +1,7 @@
 # Pony Cavalry
 
 type = cavalry
-unit_type = pony
+unit_type = enlightened_pony
 
 maneuver = 5
 offensive_morale = 3

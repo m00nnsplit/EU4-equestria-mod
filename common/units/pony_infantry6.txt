@@ -1,12 +1,12 @@
 # Ponyline infantry
 
 type = infantry
-unit_type = pony
+unit_type = enlightened_pony
 
 maneuver = 4
-offensive_morale = 6
-defensive_morale = 4
+offensive_morale = 7
+defensive_morale = 6
 offensive_fire = 4
-defensive_fire = 3
-offensive_shock = 1
-defensive_shock = 2
+defensive_fire = 5
+offensive_shock = 4
+defensive_shock = 6

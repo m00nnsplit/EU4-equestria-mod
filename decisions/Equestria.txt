@@ -131,4 +131,24 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	pony_running_of_the_leaves = {
+		potential = {
+			tag = EQU
+			NOT = { has_country_modifier = running_of_the_leaves }
+		}
+		allow = {
+			adm_tech = 2 # low requirements for early game
+			adm_power = 30
+		}
+		effect = {
+			add_country_modifier = {
+				name = "running_of_the_leaves"
+				duration = 3650
+			}
+			add_adm_power = -30
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

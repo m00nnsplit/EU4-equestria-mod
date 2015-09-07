@@ -1,0 +1,34 @@
+# gives Equestria a CB if she has the expansion ideas
+cb_overseas = {
+	prerequisites = {
+		cb_on_overseas = yes
+		technology_group = enlightened_pony
+
+		FROM = { 
+			primitives = no
+			capital_scope = { continent = asia }
+			OR = {
+				technology_group = indian
+				technology_group = sub_saharan
+				technology_group = chinese
+				technology_group = nomad_group
+			}
+		}
+	}
+	
+	war_goal = superiority_primitives	
+}
+
+# Allows any pony nation that hasn't the enlightenement to declare war on them 
+cb_steal_enlightenment = {
+	prerequisites = {
+		technology_group = new_world
+		religion_group = equestrian
+		
+		FROM = {
+			technology_group = enlightened_pony
+			tag = EQU # making it work for any pony nation is too complicated, screw it
+		}
+	}
+	war_goal = take_capital_steal_enlightenment
+}

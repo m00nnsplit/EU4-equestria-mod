@@ -2,7 +2,7 @@ primary_culture = unicorn
 government = pony_anarchy
 technology_group = north_american
 religion = celestian
-capital = 862 #Yaqui
+capital = 2476 #Kumeyaay
 
 1444.11.10 = {
 	monarch = {

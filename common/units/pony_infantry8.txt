@@ -1,7 +1,7 @@
 # Pony Discipline
 
 type = infantry
-unit_type = western
+unit_type = enlightened_pony
 
 maneuver = 4
 offensive_morale = 9

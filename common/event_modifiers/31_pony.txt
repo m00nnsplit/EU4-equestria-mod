@@ -13,10 +13,17 @@ mane6_secret_services = {
 	discovered_relations_impact = -0.25
 }
 
+running_of_the_leaves = {
+	production_efficiency = 0.10
+}
+
 magic_assimilation = {
 	culture_conversion_cost = -0.8
 	missionaries = 2
 	global_missionary_strength = 0.8
+}
+south_american_element = {
+	dip_tech_cost_modifier = -0.2
 }
 
 pressence = {

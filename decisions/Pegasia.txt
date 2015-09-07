@@ -2,20 +2,20 @@ country_decisions = {
 
 	pony_steal_enlightenment = {
 		potential = {
-			tag = EQP
+			religion_group = equestrian
 			exists = EQU
-			NOT = { technology_group = pony }
+			NOT = { technology_group = enlightened_pony }
 		}
 		allow = {
 			EQU = {
-				capital_scope = { controlled_by = EQP }
+				vassal_of = ROOT
 			}
 			adm_tech = 3
 		}
 		effect = {
 			add_prestige = 100
-			change_technology_group = pony
-			change_unit_type = pony
+			change_technology_group = enlightened_pony
+			change_unit_type = enlightened_pony
 			add_stability = -6
 			}
 		

@@ -634,6 +634,8 @@ technology = {
 	enable = african_western_franchise_warfare
 	enable = westernized_mayan
 	enable = reformed_westernized_incan		
+	
+	enable = pony_infantry9
 }
 
 technology = {

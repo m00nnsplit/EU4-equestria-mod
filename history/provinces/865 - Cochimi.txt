@@ -19,7 +19,7 @@ discovered_by = north_american
 1001.1.1 = { discovered_by = EQE }
 1001.1.1 = { owner = EQC
 	controller = EQC
-	culture = unicorn
+	culture = earth
 	religion = celestian
 	add_core = EQC
 	add_core = EQU
