@@ -1,6 +1,12 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_government_upgrade_strip"
+		texturefile = "gfx/interface/government_upgrade_strip.dds"
+		noOfFrames = 3	
+	}
+
+	spriteType = {
 		name = "GFX_monarchism_icon"
 		texturefile = "gfx/interface/monarchism_icon_strip.dds"
 		noOfFrames = 2		
@@ -15,6 +21,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_statist_vs_orangist_frame"
 		texturefile = "gfx/interface/statist_vs_orangist_frame.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_dismiss_advisor"
+		texturefile = "gfx/interface/dismiss_advisor.dds"
 	}
 
 	spriteType = {

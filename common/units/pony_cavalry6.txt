@@ -1,8 +1,7 @@
 # Pegasi maneuvers
-# balanced
 
 type = cavalry
-unit_type = pony
+unit_type = enlightened_pony
 
 maneuver = 8
 offensive_morale = 7

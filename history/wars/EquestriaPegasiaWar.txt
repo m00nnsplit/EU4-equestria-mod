@@ -14,5 +14,5 @@ war_goal = {
 # Peace
 1444.11.10 = {
 	rem_attacker = EQP
-	rem_defender = ZQU
+	rem_defender = EQU
 }

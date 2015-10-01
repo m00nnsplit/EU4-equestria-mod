@@ -1,8 +1,7 @@
 # Earth run tactic
-# balanced
 
 type = cavalry
-unit_type = pony
+unit_type = enlightened_pony
 
 maneuver = 4
 offensive_morale = 4

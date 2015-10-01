@@ -27,12 +27,6 @@ spriteTypes = {
 		transparencecheck = yes
 		noOfFrames =  2
 	}
-
-	spriteType = {
-		name = "GFX_ledger_bookmark_button_buildings"
-		texturefile = "gfx\\interface\\ledger_bookmark_button_buildings.tga"
-		transparencecheck = yes
-	}
 	
 	spriteType = {
 		name = "GFX_ledger_bookmark_button_country"
@@ -97,7 +91,7 @@ spriteTypes = {
 		name = "GFX_religion_icon_strip"
 		texturefile = "gfx\\interface\\icon_religion_small.dds"
 		transparencecheck = yes
-		noOfFrames = 24
+		noOfFrames = 29
 	}
 	spriteType = {
 		name = "GFX_ledger_bg"

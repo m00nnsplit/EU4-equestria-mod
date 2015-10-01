@@ -5,9 +5,23 @@ celestian_enlightenment = {
 	
 	# Bonuses :
 	
-	global_spy_defense = 0.5
-	land_morale = 0.3
-	stability_cost_modifier = -0.2
+	rank = {
+		1 = {
+			global_spy_defence = 0.2
+			land_morale = 0.1
+			stability_cost_modifier = -0.2
+		}
+		2 = {
+			global_spy_defence = 0.35
+			land_morale = 0.3
+			stability_cost_modifier = -0.2
+		}
+		3 = {
+			global_spy_defence = 0.5
+			land_morale = 0.3
+			stability_cost_modifier = -0.5
+		}
+	}
 }
 	
 pony_anarchy = {
@@ -17,13 +31,21 @@ pony_anarchy = {
 	republican_name = yes
 	royal_marriage = yes
 	
-	# Bonus
-	#global_revolt_risk = -1 #removed in 1.8 because of the unrest system thing
-	global_unrest = -1
+	#Bonuses :
+	rank = {
+		1 = {
+			global_unrest = -1
+		}
+		2 = {
+			global_unrest = -1.5
+		}
+		3 = {
+			global_unrest = -2
+		}
+	}
 }
 
-lunar_republic : {
-	republic = yes
+lunar_republic = {
 	republic = yes
 	
 	duration = 5
@@ -35,5 +57,21 @@ lunar_republic : {
 	#allow_convert = no
 	
 	# Bonus
-	stability_cost_modifier = -0.1
+	rank = {
+		1 = {
+			global_tax_modifier = 0.05
+			stability_cost_modifier = -0.1
+			war_exhaustion_cost = -0.15
+		}
+		2 = {
+			global_tax_modifier = 0.05
+			stability_cost_modifier = -0.5
+			war_exhaustion_cost = -0.15
+		}
+		3 = {
+			global_tax_modifier = 0.15
+			stability_cost_modifier = -0.5
+			war_exhaustion_cost = -0.15
+		}
+	}
 }

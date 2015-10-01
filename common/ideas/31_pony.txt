@@ -5,8 +5,8 @@ EQU_ideas = {
 	}
 	
 	bonus = {
-		tolerance_heretic = 3
-		tolerance_heathen = 3
+		global_colonial_growth = 30
+		colonists = 1
 	}	
 
 	trigger = {
@@ -15,11 +15,12 @@ EQU_ideas = {
 	free = yes		#will be added at load.
 	
 	celestian_enlightenment = {
-		technology_cost = -0.15
+		technology_cost = -0.2
 	}
 	native_frienship = {
 		reduced_native_attacks = yes
 		diplomatic_reputation = 2
+		global_colonial_growth = 20
 	}
 	celestian_zeal = {
 		global_missionary_strength = 0.03
@@ -120,4 +121,4 @@ EQN_ideas = {
 	peg_advancement = {
 		technology_cost = -0.2
 	}
-}
+ }

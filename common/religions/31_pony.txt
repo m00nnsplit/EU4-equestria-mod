@@ -1,7 +1,10 @@
 equestrian = {
+	can_form_personal_unions = yes
+
+
 	celestian = {
 		color = { 1 0.4 0.8 }
-		icon = 22
+		icon = 28
 		allowed_conversion = {
 			selenite
 		}
@@ -18,7 +21,7 @@ equestrian = {
 
 	selenite = {
 		color = { 0 0 1 }
-		icon = 23
+		icon = 29
 		allowed_conversion = {
 			celestian
 		}

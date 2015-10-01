@@ -2,7 +2,7 @@
 cb_overseas = {
 	prerequisites = {
 		cb_on_overseas = yes
-		technology_group = pony
+		technology_group = enlightened_pony
 
 		FROM = { 
 			primitives = no
@@ -26,7 +26,7 @@ cb_steal_enlightenment = {
 		religion_group = equestrian
 		
 		FROM = {
-			technology_group = pony
+			technology_group = enlightened_pony
 			tag = EQU # making it work for any pony nation is too complicated, screw it
 		}
 	}

@@ -30,12 +30,12 @@ groups = {
 	}
 	indian = {
 		modifier = 0.5
-		start_level = 2
+		start_level = 3
 		cav_to_inf_ratio = 0.5
 	}
 	chinese = {
 		modifier = 0.6
-		start_level = 2
+		start_level = 3
 		cav_to_inf_ratio = 0.5
 	}
 	nomad_group = {
@@ -70,13 +70,14 @@ groups = {
 		modifier = 1.5
 		start_level = 1
 		cav_to_inf_ratio = 0.5
-		valid_for_nation_designer = no
+		nation_designer_unit_type = south_american
 	}	
-	pony = {
+	enlightened_pony = {
 		modifier = 0
-		start_level = 1
-		cav_to_inf_ratio = 1
-	}	
+		start_level = 3
+		cav_to_inf_ratio = 0.5
+		trade_company = yes
+	}
 }
 
 tables = {

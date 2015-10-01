@@ -1,5 +1,7 @@
+discovered_by = north_american
 1001.1.1 = { discovered_by = EQU }
 1001.1.1 = { discovered_by = EQP }
 1001.1.1 = { discovered_by = EQC }
 1001.1.1 = { discovered_by = EQE }
 1543.1.1 = { discovered_by = SPA }
+1778.1.1 = { discovered_by = GBR }

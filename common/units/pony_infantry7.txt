@@ -1,8 +1,7 @@
 # Improved Ponyline
-# balanced
 
 type = infantry
-unit_type = pony
+unit_type = enlightened_pony
 
 maneuver = 4
 offensive_morale = 8

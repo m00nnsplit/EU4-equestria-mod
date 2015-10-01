@@ -1,8 +1,7 @@
 # Pony trained troops
-# balanced
 
 type = infantry
-unit_type = pony
+unit_type = enlightened_pony
 
 maneuver = 2
 offensive_morale = 2

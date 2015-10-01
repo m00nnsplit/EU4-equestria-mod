@@ -1,0 +1,158 @@
+quest_for_harmony_south_america = {
+
+	type = country
+	
+	category = MIL
+	
+	# target_provinces = {
+	#	region = south_america #to future me : pick 3 provinces in each continent, and when the player gets one of them fire an event (with good chance to win) to tell him if he succeded or not.
+	# } # EVENTUALLY UNUSED
+		
+	allow = {
+		is_at_war = no
+		num_of_ports = 1
+		religion_group = equestrian
+		has_country_flag = quest_for_harmony
+	}
+	success = {
+		has_country_flag = south_american_element # given via corresponding event
+	}
+	chance = {
+		factor = 1000
+	}
+	immediate = {
+		set_country_flag = quest_for_south_american_element
+		add_claim = 742 #Guayana
+		add_claim = 795 #Chichas
+		add_claim = 825 #Bogota (El Dorado !)
+		
+	}
+	abort_effect = {
+		remove_claim = 742 #Guayana
+		remove_claim = 795 #Chichas
+		remove_claim = 825 #Bogota
+	}
+	effect = {
+		add_prestige = 30
+		add_country_modifier = {
+			name = "south_american_element"
+			duration = -1
+		}
+	}
+}
+
+pony_united_lands = {
+	
+	type = country
+	
+	category = MIL
+
+	allow = {
+		tag = EQU
+		is_subject = no
+		culture_group = equestrian
+		OR = {
+			exists = EQE
+			exists = EQP
+			exists = EQC
+			exists = EQN
+			exists = EQL
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	immediate = {
+		EQE = {
+			every_owned_province = { add_claim = ROOT }
+		}
+		EQP = {
+			every_owned_province = { add_claim = ROOT }
+		}
+		EQC = {
+			every_owned_province = { add_claim = ROOT }
+		}
+		EQN = {
+			every_owned_province = { add_claim = ROOT }
+		}
+		EQL = {
+			every_owned_province = { add_claim = ROOT }
+		}
+	}
+	abort_effect = {
+		EQE = {
+			every_owned_province = { remove_claim = ROOT }
+		}
+		EQP = {
+			every_owned_province = { remove_claim = ROOT }
+		}
+		EQC = {
+			every_owned_province = { remove_claim = ROOT }
+		}
+		EQN = {
+			every_owned_province = { remove_claim = ROOT }
+		}
+		EQL = {
+			every_owned_province = { remove_claim = ROOT }
+		}
+	}
+
+	success = {
+		OR = {
+		NOT = {exists = EQE}
+		EQE = { vassal_of = ROOT }
+		EQE = { is_protectorate = yes }
+		}
+		OR = {
+		NOT = {exists = EQP}
+		EQP = {vassal_of = ROOT }
+		EQP = {is_protectorate = yes }
+		}
+		OR = {
+		NOT = {exists = EQC}
+		EQC = {vassal_of = ROOT}
+		EQC = {is_protectorate = yes }
+		}
+		OR = {
+		NOT = {exists = EQN}
+		EQN = {vassal_of = ROOT}
+		EQN = {is_protectorate = yes }
+		}
+		OR = {
+		NOT = {exists = EQL}
+		EQL = {vassal_of = ROOT}
+		EQL = {is_protectorate = yes }
+		}		
+	}
+	chance = {
+		factor = 3000
+	}
+	effect = {
+
+		EQE = {
+			every_owned_province = {
+			add_core = ROOT
+			cede_province = ROOT}
+		}
+		EQP = {
+			every_owned_province = {
+			add_core = ROOT
+			cede_province = ROOT}
+		}
+		EQC = {
+			every_owned_province = {
+			add_core = ROOT
+			cede_province = ROOT}
+		}
+		EQN = {
+			every_owned_province = {
+			add_core = ROOT
+			cede_province = ROOT}
+		}
+		EQL = {
+			every_owned_province = {
+			add_core = ROOT
+			cede_province = ROOT}
+		}		
+	}
+}

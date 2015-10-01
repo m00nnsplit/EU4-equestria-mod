@@ -25,6 +25,8 @@ technology = {
 	
 	infantry_shock		= 	0.1
 	
+	fort_15th = yes
+	
 	enable = south_american_spearmen		
 	enable = native_indian_archer
 	enable = native_clubmen
@@ -60,6 +62,7 @@ technology = {
 	enable = mamluk_archer	
 	enable = mamluk_cavalry_charge	
 	enable = south_american_warfare	
+
 	enable = pony_infantry
 	enable = pony_cavalry
 }
@@ -80,8 +83,6 @@ technology = {
 	# Tech 3
 	year = 1440
 	
-	#Earth Rampart
-	fort1 = yes
 	land_morale = 	0.5
 }
 
@@ -90,7 +91,8 @@ technology = {
 	year = 1453
 	
 	#Pike Square
-	armory = yes
+	
+
 	land_morale = 	0.5
 	military_tactics 	= 	0.25
 }
@@ -126,6 +128,7 @@ technology = {
 	enable = maya_tribal_warfare
 	enable = chinese_footsoldier		
 	enable = japanese_footsoldier	
+
 	enable = pony_infantry2
 	
 	combat_width = 2
@@ -138,6 +141,10 @@ technology = {
 	#Arquebus
 	military_tactics 	= 	0.25
 	infantry_shock		= 	0.30
+	
+	
+	barracks = yes
+
 
 	enable = african_somali_cavalry
 	enable = african_tuareg_cavalry
@@ -150,6 +157,7 @@ technology = {
 	enable = chinese_steppe		
 	enable = japanese_samurai	
 	enable = shaybani	
+
 	enable = pony_cavalry2
 	
 	combat_width = 2
@@ -173,14 +181,10 @@ technology = {
 	
 	#Pike and Shot
 	infantry_fire		= 	0.25
-	military_tactics 	= 	0.25
 	cavalry_shock		=	1.0
 
-	training_fields = yes
-		
-	march_building = yes
 	
-	combat_width = 1
+	regimental_camp = yes
 }
 
 technology = {
@@ -189,7 +193,6 @@ technology = {
 	year = 1518
 	
 	#Ditch
-	fort2 = yes
 	
 	enable = south_indian_musketeer	
 	enable = mughal_musketeer		
@@ -199,9 +202,12 @@ technology = {
 	enable = swiss_landsknechten
 	enable = gaelic_mercenary
 	enable = germanized_pike
-	enable = asian_arquebusier		
+	enable = asian_arquebusier	
+
 	enable = pony_cavalry3
-	enable = pony_infantry3
+
+	military_tactics 	= 	0.25
+	combat_width = 1	
 }
 
 technology = {
@@ -242,7 +248,6 @@ technology = {
 
 	
 	weapons = yes
-	barracks = yes
 	
 	combat_width = 2
 }
@@ -280,7 +285,6 @@ technology = {
 	artillery_shock 	= 	0.1
 	artillery_fire 		= 	0.4
 	
-	regimental_camp = yes
 	enable = small_cast_iron_bombard
 	enable = large_cast_iron_bombard
 }
@@ -290,8 +294,7 @@ technology = {
 	year = 1583
 	
 	#Star Bastions
-	fort3 = yes	
-
+	fort_16th = yes
 	infantry_fire		=	0.5
 	
 	enable = african_hussar
@@ -311,6 +314,7 @@ technology = {
 	enable = topchis_artillery	
 	enable = asian_charge_cavalry
 	enable = reformed_mughal_mansabdar	
+
 	enable = pony_infantry4
 	
 	combat_width = 2
@@ -324,6 +328,8 @@ technology = {
 	land_morale 		=	1.0
 	military_tactics	=	0.25
 	
+
+	
 	enable = irish_charge 
 	enable = dutch_maurician	
 	enable = afsharid_reformed_infantry	
@@ -333,7 +339,8 @@ technology = {
 	enable = bantu_gunpowder_warfare	
 	enable = niger_kongolese_gunpowder_warfare	
 	enable = adal_gunpowder_warfare		
-	enable = ethiopian_gunpowder_warfare	
+	enable = ethiopian_gunpowder_warfare
+
 	enable = pony_cavalry4
 }
 
@@ -346,11 +353,12 @@ technology = {
 	artillery_fire 		= 	1.0	
 
 
-	arsenal = yes
+	training_fields = yes
 	
 	combat_width = 1
 	
 	enable = chambered_demi_cannon
+
 	enable = pony_infantry5
 }
 
@@ -373,7 +381,6 @@ technology = {
 	#Carbine
 	maneuver_value 		= 	0.25
 
-	conscription_center = yes
 		
 	enable = swedish_gallop	
 	enable = sikh_hit_and_run
@@ -394,19 +401,15 @@ technology = {
 	military_tactics 	= 	0.5
 	supply_limit		=	0.5
 
-	war_college = yes
+	fort_17th = yes
+
 	
 	enable = austrian_tercio   
 	enable = swedish_gustavian		
 	enable = scottish_highlander	
-
 	enable = saxon_infantry	
 	enable = ottoman_reformed_janissary	
 	enable = asian_musketeer	
-
-
-
-
 	enable = incan_guerilla_warfare	
 	enable = iroquois_rifle_scout
 	enable = peruvian_guerilla_warfare
@@ -422,13 +425,12 @@ technology = {
 	year = 1661
 	
 	#Killing Grounds
-	fort4 = yes
 	
 	infantry_fire		= 	0.5
 		
-	enable = swivel_cannon		
-	enable = pony_cavalry5	
+	enable = swivel_cannon
 
+	enable = pony_cavalry5
 	combat_width = 2
 }
 
@@ -454,6 +456,9 @@ technology = {
 	artillery_fire		=	2.0
 	
 	combat_width = 2
+	
+	conscription_center = yes
+
 	
 	enable = polish_winged_hussar	
 	enable = muscovite_cossack	
@@ -493,7 +498,8 @@ technology = {
 	enable = indian_shock_cavalry	
 	enable = chinese_dragoon	
 	enable = russian_petrine	
-	enable = pony_infantry7	
+
+	enable = pony_infantry7
 }
 
 technology = {
@@ -501,7 +507,7 @@ technology = {
 	year = 1715
 	
 	#Covered Way
-	fort5	= yes	
+	fort_18th	= yes	
 	
 	combat_width = 2
 }
@@ -515,6 +521,7 @@ technology = {
 	artillery_fire		=	2.0
 	
 	enable = royal_mortar	
+
 	enable = pony_cavalry6
 }
 
@@ -552,6 +559,7 @@ technology = {
 	enable = french_carabinier
 	enable = eastern_uhlan
 	enable = eastern_skirmisher
+
 	enable = pony_infantry8
 	
 	combat_width = 2
@@ -564,8 +572,6 @@ technology = {
 	#Bayonet
 	supply_limit		=	0.5
 	infantry_fire		= 	0.5	
-
-
 }
 
 technology = {
@@ -592,6 +598,7 @@ technology = {
 	enable = reformed_asian_cavalry		
 	enable = french_impulse
 	enable = british_square
+
 	enable = pony_cavalry7
 }
 
@@ -600,7 +607,6 @@ technology = {
 	year = 1790
 	
 	#Defense in Depth
-	fort6 = yes
 		
 	enable = flying_battery  
 }
@@ -628,6 +634,7 @@ technology = {
 	enable = african_western_franchise_warfare
 	enable = westernized_mayan
 	enable = reformed_westernized_incan		
+	
 	enable = pony_infantry9
 }
 

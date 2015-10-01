@@ -1,4 +1,71 @@
 country_decisions = {
+	
+	pony_united = {
+		potential = {
+			tag = EQU
+			culture_group = equestrian
+			NOT = { has_country_modifier = united_ponykind }
+		}
+		allow = {
+			NOT = {
+				exists = EQE
+				exists = EQP
+				exists = EQC
+				exists = EQN
+				exists = EQL
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "united_ponykind"
+				duration = -1 
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	pony_pressence = {
+		potential = {
+			culture_group = equestrian
+			NOT = { has_country_modifier = pressence }
+			has_idea_group = influence_ideas 
+		}
+		allow = {
+			full_idea_group = influence_ideas 
+		}
+		effect = {
+			add_country_modifier = {
+				name = "pressence"
+				duration = -1 
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	pony_magic_assimilation = {
+		potential = {
+			OR = {primary_culture = alicorn
+			primary_culture = unicorn
+			primary_culture = crystal}
+			has_idea_group = religious_ideas 
+			NOT = { has_country_modifier = magic_assimilation }
+		}
+		allow = {
+			full_idea_group = religious_ideas 
+		}
+		effect = {
+			add_country_modifier = {
+				name = "magic_assimilation"
+				duration = -1 
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 	pony_the_east_coast = {
 		potential = {
@@ -7,9 +74,8 @@ country_decisions = {
 			NOT = { has_country_flag = capital_at_canterlot }
 		}
 		allow = {
-			owns = 953 # Conoy
-			is core = 953
-			adm = 3 #for temples
+			owns_core_province = 953 # Conoy
+			adm_tech = 5 #for temples
 		}
 		effect = {
 			set_country_flag = capital_at_canterlot
@@ -18,7 +84,7 @@ country_decisions = {
 			953 = {
 				change_province_name = "Canterlot"
 				add_base_tax = 3 # Magical money !
-				add_manpower = 1
+				add_base_manpower = 1
 			}
 		}
 		ai_will_do = {
