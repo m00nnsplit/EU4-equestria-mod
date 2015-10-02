@@ -62,7 +62,7 @@ EQP_ideas = {
 		inflation_reduction = 0.2
 	}
 	peg_mobilisation = {
-		global_manpower_modifier = 1.0
+		global_manpower_modifier = 0.5
 		recover_army_morale_speed = 0.02
 	}
 	peg_training = {

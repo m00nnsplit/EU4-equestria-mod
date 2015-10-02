@@ -2,63 +2,96 @@ country_decisions = {
 	
 	pony_united = {
 		potential = {
-			tag = EQU
+			OR = {
+				tag = EQU
+				tag = EQE
+				tag = EQP
+				tag = EQC
+				tag = EQN
+				tag = EQL
+			}
+			
 			culture_group = equestrian
 			NOT = { has_country_modifier = united_ponykind }
 		}
 		allow = {
-			NOT = {
-				exists = EQE
-				exists = EQP
-				exists = EQC
-				exists = EQN
-				exists = EQL
+			OR = {
+				AND = {
+				# for Equestria
+				tag = EQU
+				NOT = {
+					exists = EQE
+					exists = EQP
+					exists = EQC
+					exists = EQN
+					exists = EQL
+				}
+				}
+				
+				AND = {
+				# Ponyland
+				tag = EQE
+				NOT = {
+					exists = EQU
+					exists = EQP
+					exists = EQC
+					exists = EQN
+					exists = EQL
+				}
+				}
+				
+				AND = {
+				# Pegasus
+				tag = EQP
+				NOT = {
+					exists = EQE
+					exists = EQU
+					exists = EQC
+					exists = EQN
+					exists = EQL
+				}
+				}
+				
+				AND = {
+				# Unicorns
+				tag = EQC
+				NOT = {
+					exists = EQE
+					exists = EQP
+					exists = EQU
+					exists = EQN
+					exists = EQL
+				}
+				}
+				
+				AND = {
+				# Pegasus colonies, although that shouldn't really be needed since they can reform into Pegasia anyway
+				tag = EQN
+				NOT = {
+					exists = EQE
+					exists = EQP
+					exists = EQC
+					exists = EQU
+					exists = EQL
+				}
+				}
+				
+				AND = {
+				# Crystal Empire
+				tag = EQL
+				NOT = {
+					exists = EQE
+					exists = EQP
+					exists = EQC
+					exists = EQN
+					exists = EQU
+				}
+				}
 			}
 		}
 		effect = {
 			add_country_modifier = {
 				name = "united_ponykind"
-				duration = -1 
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	pony_pressence = {
-		potential = {
-			culture_group = equestrian
-			NOT = { has_country_modifier = pressence }
-			has_idea_group = influence_ideas 
-		}
-		allow = {
-			full_idea_group = influence_ideas 
-		}
-		effect = {
-			add_country_modifier = {
-				name = "pressence"
-				duration = -1 
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	pony_magic_assimilation = {
-		potential = {
-			OR = {primary_culture = alicorn
-			primary_culture = unicorn
-			primary_culture = crystal}
-			has_idea_group = religious_ideas 
-			NOT = { has_country_modifier = magic_assimilation }
-		}
-		allow = {
-			full_idea_group = religious_ideas 
-		}
-		effect = {
-			add_country_modifier = {
-				name = "magic_assimilation"
 				duration = -1 
 			}
 		}
@@ -94,7 +127,10 @@ country_decisions = {
 	
 	pony_the_iron_pony_competition = {
 		potential = {
-			tag = EQU
+			OR = {
+				tag = EQU
+				tag = EQP
+			}
 			NOT = { has_country_modifier = iron_pony_competition }
 		}
 		allow = {
@@ -132,6 +168,7 @@ country_decisions = {
 		}
 	}
 	pony_running_of_the_leaves = {
+		# Equestria is pretty poor, and needs money badly in the very early game. You can definitly get around without this modifier, though.
 		potential = {
 			tag = EQU
 			NOT = { has_country_modifier = running_of_the_leaves }
@@ -143,7 +180,7 @@ country_decisions = {
 		effect = {
 			add_country_modifier = {
 				name = "running_of_the_leaves"
-				duration = 3650
+				duration = 7300
 			}
 			add_adm_power = -30
 		}

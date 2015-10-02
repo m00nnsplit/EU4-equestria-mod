@@ -4,9 +4,9 @@ type = cavalry
 unit_type = enlightened_pony
 
 maneuver = 8
-offensive_morale = 12
-defensive_morale = 10
-offensive_fire = 11
-defensive_fire = 8
-offensive_shock = 9
-defensive_shock = 9
+offensive_morale = 6
+defensive_morale = 4
+offensive_fire = 3
+defensive_fire = 1
+offensive_shock = 5
+defensive_shock = 3
