@@ -74,7 +74,7 @@ groups = {
 	}	
 	enlightened_pony = {
 		modifier = 0
-		start_level = 3
+		start_level = 1
 		cav_to_inf_ratio = 0.5
 		trade_company = yes
 	}
