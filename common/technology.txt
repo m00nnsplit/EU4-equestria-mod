@@ -33,6 +33,18 @@ groups = {
 		start_level = 3
 		cav_to_inf_ratio = 0.5
 	}
+	east_african = {
+		modifier = 0.5
+		start_level = 3
+		cav_to_inf_ratio = 0.5
+		nation_designer_unit_type = sub_saharan
+	}
+	central_african = {
+		modifier = 0.65
+		start_level = 2
+		cav_to_inf_ratio = 0.5
+		nation_designer_unit_type = sub_saharan
+	}
 	chinese = {
 		modifier = 0.6
 		start_level = 3
@@ -46,7 +58,7 @@ groups = {
 			government = steppe_horde
 		}
 	}
-	sub_saharan = {
+	sub_saharan = { #West African
 		modifier = 0.6
 		start_level = 2
 		cav_to_inf_ratio = 0.5
@@ -72,10 +84,16 @@ groups = {
 		cav_to_inf_ratio = 0.5
 		nation_designer_unit_type = south_american
 	}	
+	high_american = {
+		modifier = 0
+		start_level = 3
+		cav_to_inf_ratio = 0.5
+		nation_designer_unit_type = north_american		
+	}
 	enlightened_pony = {
 		modifier = 0
 		start_level = 1
-		cav_to_inf_ratio = 0.5
+		cav_to_inf_ratio = 0.7
 		trade_company = yes
 	}
 }

@@ -78,6 +78,7 @@ spriteTypes = {
 		name = "GFX_ledger_piechart_BG"
 		texturefile = "gfx\\interface\\ledger_piechart_BG.tga"
 		transparencecheck = yes
+		allwaystransparent = yes	
 	}
 	
 	spriteType = {

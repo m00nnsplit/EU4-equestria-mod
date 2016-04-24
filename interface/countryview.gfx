@@ -60,6 +60,17 @@ spriteTypes = {
 		#allwaystransparent = yes
 	}
 	
+	spriteType = {	
+		name = "GFX_unit_types_strip_mil_center_view"
+		texturefile = "gfx//interface//unit_types_center_strip.tga"
+		noOfFrames = 8
+		loadType = "INGAME"
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = no
+		#allwaystransparent = yes
+	}	
+	
 	spriteType = {
 		name = "GFX_tab_overview"
 		texturefile = "gfx//interface//tab_domestic_overview.tga"
@@ -117,6 +128,14 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
+		name = "GFX_tab_estates"
+		texturefile = "gfx//interface//tab_domestic_estates.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 2
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
 		name = "GFX_tab_policies"
 		texturefile = "gfx//interface//tab_domestic_policies.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -134,7 +153,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_icon_religion"
-		texturefile = "gfx//interface//icon_religion.dds"
+		texturefile = "gfx//interface//icon_religion.tga"
 		noOfFrames = 29
 ###		loadType = "INGAME"
 		
@@ -144,7 +163,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_icon_religion_small"
-		texturefile = "gfx//interface//icon_religion_small.dds"
+		texturefile = "gfx//interface//icon_religion_small.tga"
 		noOfFrames = 29
 		loadType = "INGAME"
 	}

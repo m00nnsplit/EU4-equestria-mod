@@ -145,6 +145,11 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
+		name = "GFX_development_button_raze"
+		texturefile = "gfx/interface/raze_province.dds"
+	}		
+	
+	spriteType = {
 		name = "GFX_development_button_base_tax"
 		texturefile = "gfx/interface/development_button_base_tax.dds"
 	}
@@ -222,7 +227,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_province_view_religion"
-		texturefile = "gfx//interface//province_view_religion.dds"
+		texturefile = "gfx//interface//province_view_religion.tga"
 		noOfFrames = 29
 		loadType = "INGAME"
 	}
@@ -472,7 +477,7 @@ spriteTypes = {
 	}
 	
 	########################################
-
+	
 	spriteType = {
 		name = "GFX_province_view_history_bg"
 		texturefile = "gfx/interface/province_view_history_bg.dds"
@@ -542,7 +547,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_button_show_siege"
 		texturefile = "gfx//interface//button_show_siege.tga"
-		allwaystransparent = no
 	}
 
 	spriteType = {
@@ -637,8 +641,14 @@ spriteTypes = {
 		texturefile = "gfx//interface//resources.tga"
 		noOfFrames = 25
 		loadType = "INGAME"
-		
 	}
+	
+	spriteType = {
+		name = "GFX_resource_icon_small"
+		texturefile = "gfx//interface//resources_small.dds"
+		noOfFrames = 25
+		loadType = "INGAME"
+	}	
 	
 	spriteType = {
 		name = "GFX_resource_icon_transparent"
@@ -780,7 +790,14 @@ spriteTypes = {
 		noOfFrames = 1
 		effectFile = "gfx/FX/buttonstate.lua"
 		loadType = "INGAME"
-		
+	}
+	
+	spriteType = {
+		name = "GFX_country_modifier_button"
+		texturefile = "gfx//interface//country_modifier_button.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
 	}
 
 	textSpriteType = {
@@ -912,4 +929,65 @@ spriteTypes = {
 		name = "GFX_defensiveness_icon"
 		texturefile = "gfx//interface//icon_power.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_region_area_banner_red"
+		texturefile = "gfx//interface//region_area_banner_red.dds"
+	}
+
+	spriteType = {
+		name = "GFX_region_area_banner_green"
+		texturefile = "gfx//interface//region_area_banner_green.dds"
+	}	
+	
+	#####	Cultural Change #####
+	
+	spriteType = {
+		name = "GFX_culture_change_bg"
+		texturefile = "gfx/interface/culture_change_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_culture_option"
+		texturefile = "gfx/interface/culture_option.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_provinceview_estates_list_bg"
+		texturefile = "gfx/interface/provinceview_estates_list_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_estate_selection_bg"
+		texturefile = "gfx/interface/estate_selection_bg.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_province_estates_button_icon"
+		texturefile = "gfx/interface/province_estates_button_icon.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_state_bg"
+		texturefile = "gfx/interface/state_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_in_state_icon"
+		texturefile = "gfx/interface/in_state_icon.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_make_state_button"
+		texturefile = "gfx/interface/make_state_button.dds"
+	}	
+	spriteType = {
+		name = "GFX_abandon_state_button"
+		texturefile = "gfx/interface/abandon_state_button.dds"
+	}	
+	spriteType = {
+		name = "GFX_core_all_button"
+		texturefile = "gfx/interface/core_all_button.dds"
+	}	
+}
 }

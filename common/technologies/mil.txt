@@ -15,7 +15,6 @@ technology = {
 	infantry_fire		= 	0.25
 	infantry_shock 		= 	0.20	
 	cavalry_shock  		= 	0.8	
-	artillery_shock 	=	0.05
 	land_morale 		= 	2.0
 }
 
@@ -24,6 +23,7 @@ technology = {
 	year = 1390
 	
 	infantry_shock		= 	0.1
+	infantry_fire 		= 	0.1
 	
 	fort_15th = yes
 	
@@ -62,7 +62,6 @@ technology = {
 	enable = mamluk_archer	
 	enable = mamluk_cavalry_charge	
 	enable = south_american_warfare	
-
 	enable = pony_infantry
 	enable = pony_cavalry
 }
@@ -104,6 +103,7 @@ technology = {
 	#Standardised Pikes
 	supply_limit 		= 	0.5
 	infantry_shock		= 	0.15
+	cavalry_shock		= 	0.2
 
 	enable = western_men_at_arms	
 	enable = western_longbow	
@@ -128,7 +128,6 @@ technology = {
 	enable = maya_tribal_warfare
 	enable = chinese_footsoldier		
 	enable = japanese_footsoldier	
-
 	enable = pony_infantry2
 	
 	combat_width = 2
@@ -141,6 +140,7 @@ technology = {
 	#Arquebus
 	military_tactics 	= 	0.25
 	infantry_shock		= 	0.30
+	infantry_fire 		= 	0.20
 	
 	
 	barracks = yes
@@ -157,7 +157,6 @@ technology = {
 	enable = chinese_steppe		
 	enable = japanese_samurai	
 	enable = shaybani	
-
 	enable = pony_cavalry2
 	
 	combat_width = 2
@@ -168,8 +167,8 @@ technology = {
 	year = 1492
 	
 	#The limber
-	infantry_fire		= 	0.10
 	artillery_fire 		= 	1
+	artillery_shock 	=	0.05
 	military_tactics 	= 	0.25
 	enable = large_cast_bronze_mortar 
 	enable = houfnice
@@ -181,7 +180,7 @@ technology = {
 	
 	#Pike and Shot
 	infantry_fire		= 	0.25
-	cavalry_shock		=	1.0
+	cavalry_shock		=	0.8
 
 	
 	regimental_camp = yes
@@ -203,9 +202,9 @@ technology = {
 	enable = gaelic_mercenary
 	enable = germanized_pike
 	enable = asian_arquebusier	
-
+	enable = steppe_raiders
+	
 	enable = pony_cavalry3
-
 	military_tactics 	= 	0.25
 	combat_width = 1	
 }
@@ -236,6 +235,7 @@ technology = {
 	enable = qizilbash_cavalry	
 	enable = east_mongolian_steppe	
 	enable = indian_elephant	
+	enable = steppe_riders
 }
 
 technology = {
@@ -275,6 +275,7 @@ technology = {
 	enable = niger_kongolese_forest_warfare		
 	enable = african_hill_warfare	
 	enable = ethiopian_mountain_warfare		
+	enable = steppe_footmen
 }
 
 technology = {
@@ -295,7 +296,7 @@ technology = {
 	
 	#Star Bastions
 	fort_16th = yes
-	infantry_fire		=	0.5
+	infantry_fire		=	0.3
 	
 	enable = african_hussar
 	enable = french_caracolle 
@@ -314,7 +315,7 @@ technology = {
 	enable = topchis_artillery	
 	enable = asian_charge_cavalry
 	enable = reformed_mughal_mansabdar	
-
+	enable = steppe_lancers
 	enable = pony_infantry4
 	
 	combat_width = 2
@@ -339,8 +340,8 @@ technology = {
 	enable = bantu_gunpowder_warfare	
 	enable = niger_kongolese_gunpowder_warfare	
 	enable = adal_gunpowder_warfare		
-	enable = ethiopian_gunpowder_warfare
-
+	enable = ethiopian_gunpowder_warfare	
+	enable = steppe_musketeers
 	enable = pony_cavalry4
 }
 
@@ -358,7 +359,6 @@ technology = {
 	combat_width = 1
 	
 	enable = chambered_demi_cannon
-
 	enable = pony_infantry5
 }
 
@@ -389,6 +389,7 @@ technology = {
 	enable = mamluk_musket_charge 
 	enable = afsharid_reformed	
 	enable = leather_cannon	
+	enable = steppe_mounted_raiders
 	
 	combat_width = 2
 }
@@ -398,7 +399,7 @@ technology = {
 	year = 1648
 	
 	#Gustavian Infantry
-	military_tactics 	= 	0.5
+	military_tactics 	= 	0.25
 	supply_limit		=	0.5
 
 	fort_17th = yes
@@ -418,6 +419,7 @@ technology = {
 	enable = commanche_swarm
 	enable = central_american_swarm
 	enable = south_american_swarm
+	enable = steppe_infantry
 }
 
 technology = {
@@ -428,8 +430,7 @@ technology = {
 	
 	infantry_fire		= 	0.5
 		
-	enable = swivel_cannon
-
+	enable = swivel_cannon		
 	enable = pony_cavalry5
 	combat_width = 2
 }
@@ -440,9 +441,9 @@ technology = {
 	
 	#Line Infantry
 	sprite_level = 3
+	military_tactics 	= 	0.25
 	
 	infantry_shock 		=	0.5
-
 	enable = pony_infantry6
 }
 
@@ -473,7 +474,7 @@ technology = {
 	#Light Cavalry
 	
 	cavalry_shock		=	1.0
-	military_tactics 	= 	0.5
+	military_tactics 	= 	0.25
 	maneuver_value 		= 	0.5
 
 	enable = swedish_arme_blanche	
@@ -498,7 +499,7 @@ technology = {
 	enable = indian_shock_cavalry	
 	enable = chinese_dragoon	
 	enable = russian_petrine	
-
+	enable = steppe_cavalry
 	enable = pony_infantry7
 }
 
@@ -508,7 +509,8 @@ technology = {
 	
 	#Covered Way
 	fort_18th	= yes	
-	
+	military_tactics 	= 	0.25
+
 	combat_width = 2
 }
 
@@ -521,7 +523,6 @@ technology = {
 	artillery_fire		=	2.0
 	
 	enable = royal_mortar	
-
 	enable = pony_cavalry6
 }
 
@@ -559,7 +560,7 @@ technology = {
 	enable = french_carabinier
 	enable = eastern_uhlan
 	enable = eastern_skirmisher
-
+	enable = steppe_rifles
 	enable = pony_infantry8
 	
 	combat_width = 2
@@ -598,7 +599,7 @@ technology = {
 	enable = reformed_asian_cavalry		
 	enable = french_impulse
 	enable = british_square
-
+	enable = steppe_uhlans
 	enable = pony_cavalry7
 }
 
@@ -618,7 +619,7 @@ technology = {
 	#Impulse Warfare
 	sprite_level = 5	
 	
-	military_tactics	=	0.5
+	military_tactics	=	0.25
 	land_morale			=	1.0
 	maneuver_value = 0.25
 	
@@ -634,7 +635,7 @@ technology = {
 	enable = african_western_franchise_warfare
 	enable = westernized_mayan
 	enable = reformed_westernized_incan		
-	
+	enable = reformed_steppe_rifles
 	enable = pony_infantry9
 }
 
@@ -653,6 +654,7 @@ technology = {
 	year = 1835
 	
 	#Field Howitzer
+	military_tactics	=	0.25
 	artillery_shock		=	0.1
 	artillery_fire		=	2.0	
 }

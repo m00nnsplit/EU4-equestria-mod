@@ -1,10 +1,11 @@
 name="My Little Pony : Equestria Mod"
-archive="mod/equestria.zip"
+archive="mod/EU4-Equestria-mod"
 tags=
 {
-"map"
+ "map"
  "Alternative History"
  "New Nations"
+ "Pony"
  }
 picture="victory.png"
-supported_version="1.13.1"
+supported_version="1.16.3"
