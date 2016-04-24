@@ -1,6 +1,10 @@
 equestrian	= {
 	graphical_culture = westerngfx
 
+	male_names = { Dick Gutter Big Star Fire Robin Night Flash Mana Prime Red Green Snail Joe Scruffy Glitter Clark Kal }
+	# This is getting a bit out of hand but..
+	female_names = { Nissa Cherry Twist Lily Glitter Harley Kara Star Fire }
+	
 	alicorn = {
 		primary = EQU
 		dynasty_names = {
