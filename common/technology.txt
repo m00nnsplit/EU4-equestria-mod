@@ -1,100 +1,183 @@
 # Do not change tags in here without changing every other reference to them.
 # If adding new technology, make sure they are uniquely named.
 
-# Armies get a insufficient support penalty when the ratio cav / (inf+cav) is _higher_ than "cav_to_inf_ratio". This applies for the "unit_type" of a country.
 
 # Groups must be defined BEFORE tables.
 
+#Nation Designer Cost is set to match triggers for starting institutions.
 
 groups = {
 	western = {
-		modifier = 0
 		start_level = 3
-		cav_to_inf_ratio = 0.5
-		trade_company = yes
+		start_cost_modifier = 0
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
 	}
 	eastern = {
-		modifier = 0.20
 		start_level = 3
-		cav_to_inf_ratio = 0.6
+		start_cost_modifier = 0.20
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
 	}
 	ottoman = {
-		modifier = 0.25
 		start_level = 3
-		cav_to_inf_ratio = 0.5
+		start_cost_modifier = 0.25
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
 	}
 	muslim = {
-		modifier = 0.40
 		start_level = 3
-		cav_to_inf_ratio = 0.8
+		start_cost_modifier = 0.40
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
 	}
 	indian = {
-		modifier = 0.5
 		start_level = 3
-		cav_to_inf_ratio = 0.5
+		start_cost_modifier = 0.5
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
 	}
 	east_african = {
-		modifier = 0.5
 		start_level = 3
-		cav_to_inf_ratio = 0.5
+		start_cost_modifier = 0.5
 		nation_designer_unit_type = sub_saharan
 	}
 	central_african = {
-		modifier = 0.65
 		start_level = 2
-		cav_to_inf_ratio = 0.5
+		start_cost_modifier = 0.65
 		nation_designer_unit_type = sub_saharan
 	}
 	chinese = {
-		modifier = 0.6
 		start_level = 3
-		cav_to_inf_ratio = 0.5
+		start_cost_modifier = 0.6
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
 	}
 	nomad_group = {
-		modifier = 0.75
 		start_level = 3
-		cav_to_inf_ratio = 1.0
+		start_cost_modifier = 0.75
 		nation_designer_trigger = {
-			government = steppe_horde
+			has_reform = steppe_horde
 		}
 	}
 	sub_saharan = { #West African
-		modifier = 0.6
 		start_level = 2
-		cav_to_inf_ratio = 0.5
+		start_cost_modifier = 0.6
 	}
 	north_american = {
-		modifier = 2.5
 		start_level = 1
-		cav_to_inf_ratio = 0.5
+		start_cost_modifier = 2.5
+		is_primitive = yes
 	}
 	mesoamerican = {
-		modifier = 1.5
 		start_level = 1
-		cav_to_inf_ratio = 0.5
+		start_cost_modifier = 1.5
+		is_primitive = yes
 	}
 	south_american = {
-		modifier = 2.5
 		start_level = 1
-		cav_to_inf_ratio = 0.5
+		start_cost_modifier = 2.5
+		is_primitive = yes
 	}
 	andean = {
-		modifier = 1.5
 		start_level = 1
-		cav_to_inf_ratio = 0.5
+		start_cost_modifier = 1.5
 		nation_designer_unit_type = south_american
+		is_primitive = yes
 	}	
+	
+	
 	high_american = {
-		modifier = 0
 		start_level = 3
-		cav_to_inf_ratio = 0.5
-		nation_designer_unit_type = north_american		
+		start_cost_modifier = 0
+		nation_designer_unit_type = high_american
+		nation_designer_trigger = {
+			capital_scope = {
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+			}
+		}
+		nation_designer_cost = {
+			value = 75
+		}
 	}
-	enlightened_pony = {
-		modifier = 0
+    
+    enlightened_pony = {
 		start_level = 1
-		cav_to_inf_ratio = 0.7
-		trade_company = yes
+		start_cost_modifier = 0
+        nation_designer_cost = {
+			value = 75
+		}
 	}
 }
 

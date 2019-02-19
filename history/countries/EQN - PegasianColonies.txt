@@ -1,5 +1,6 @@
 primary_culture = pegasus
-government = pony_anarchy
+government = native
+government_rank = 1
 technology_group = north_american
 religion = celestian
 capital = 889 #Arapaho

@@ -1,6 +1,6 @@
 #866 - Guaycura
 
-culture = unicorn
+culture = earth
 religion = celestian
 capital = "Guaycura" 
 trade_goods = unknown 

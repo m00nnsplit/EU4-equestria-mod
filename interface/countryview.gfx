@@ -52,7 +52,7 @@ spriteTypes = {
 	spriteType = {	
 		name = "GFX_unit_types_strip_mil_view"
 		texturefile = "gfx//interface//unit_types_strip.tga"
-		noOfFrames = 8
+		noOfFrames = 10
 		loadType = "INGAME"
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -102,8 +102,16 @@ spriteTypes = {
 		noOfFrames = 2
 		loadType = "INGAME"
 	}
+	
+	spriteType = {
+		name = "GFX_tab_local_government"
+		texturefile = "gfx//interface//tab_domestic_local_government.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 2
+		loadType = "INGAME"
+	}	
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_tab_domestic_building"
 		texturefile = "gfx//interface//tab_domestic_building.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -152,19 +160,39 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_tab_missions"
+		texturefile = "gfx//interface//tab_domestic_missions.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 2
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_tab_decisions"
+		texturefile = "gfx//interface//tab_domestic_decisions.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 2
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
 		name = "GFX_icon_religion"
-		texturefile = "gfx//interface//icon_religion.tga"
-		noOfFrames = 29
+		texturefile = "gfx//interface//icon_religion.dds"
+		noOfFrames = 30
 ###		loadType = "INGAME"
 		
 	}
 	
-
+	spriteType = {
+		name = "GFX_country_icon_religion"
+		texturefile = "gfx//interface//country_icon_religion.dds"
+		noOfFrames = 30		
+	}
 
 	spriteType = {
 		name = "GFX_icon_religion_small"
-		texturefile = "gfx//interface//icon_religion_small.tga"
-		noOfFrames = 29
+		texturefile = "gfx//interface//icon_religion_small.dds"
+		noOfFrames = 30
 		loadType = "INGAME"
 	}
 
@@ -351,6 +379,17 @@ spriteTypes = {
 		
 		transparencecheck = yes
 	}
+	
+		spriteType = {	
+		name = "GFX_government_reform_banner"
+		texturefile = "gfx//interface//government_reform_banner.dds"
+		noOfFrames = 1
+		loadType = "INGAME"
+		
+		transparencecheck = yes
+	}
+	
+	
 
 	spriteType = {
 		name = "GFX_advisor_noAdvisorType"

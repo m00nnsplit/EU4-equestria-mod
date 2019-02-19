@@ -4,7 +4,7 @@ equestrian = {
 
 	celestian = {
 		color = { 1 0.4 0.8 }
-		icon = 28
+		icon = 29
 		allowed_conversion = {
 			selenite
 		}
@@ -21,7 +21,7 @@ equestrian = {
 
 	selenite = {
 		color = { 0 0 1 }
-		icon = 29
+		icon = 30
 		allowed_conversion = {
 			celestian
 		}

@@ -1,4 +1,5 @@
-government = celestian_enlightenment
+government = monarchy
+government_rank = 1
 mercantilism = 0.1
 primary_culture = alicorn
 culture_group_union = equestrian

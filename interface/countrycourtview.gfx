@@ -1,5 +1,21 @@
 spriteTypes = {
 
+	PieChartType = {
+		name = "GFX_no_personality_chart"
+		size = 17
+	}
+	spriteType = {
+		name = "GFX_no_personality_chart_overlay"
+		texturefile = "gfx/interface/provinceView_chart_overlay.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_no_provinceView_chart_overlay_0.9"
+		texturefile = "gfx/interface/provinceView_chart_overlay_0.9.dds"
+		allwaystransparent = yes
+	}	
+	
 	spriteType = {
 		name = "GFX_government_upgrade_strip"
 		texturefile = "gfx/interface/government_upgrade_strip.dds"
@@ -29,6 +45,22 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_promote_advisor"
+		texturefile = "gfx/interface/promote_advisor.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_indicator_religion"
+		texturefile = "gfx/interface/advisor_indicator_religion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_indicator_culture"
+		texturefile = "gfx/interface/advisor_indicator_culture.dds"
+		noOfFrames = 5
+	}	
+	
+	spriteType = {
 		name = "GFX_statist_vs_orangist_overlay"
 		texturefile = "gfx/interface/statist_vs_orangist_overlay.dds"
 	}
@@ -37,7 +69,21 @@ spriteTypes = {
 		name = "GFX_support_heir_button"
 		texturefile = "gfx/interface/support_heir_button.dds"
 	}
-
+	
+	spriteType = {
+		name = "GFX_abdicate_button"
+		texturefile = "gfx/interface/abdicate_button.dds"
+	}	
+	spriteType = {
+		name = "GFX_disinherit_button"
+		texturefile = "gfx/interface/abdicate_button.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_court_banner_green"
+		texturefile = "gfx/interface/court_banner_green.dds"
+	}	
+	
 	spriteType = {
 		name = "GFX_country_modifier_frame"
 		texturefile = "gfx//interface//country_modifier_frame.dds"
@@ -56,7 +102,7 @@ spriteTypes = {
 		name = "GFX_tech_group_strip"
 		texturefile = "gfx//interface//tech_group_strip.dds"
 		transparencecheck = yes	
-		noOfFrames = 16
+		noOfFrames = 17
 	}	
 
 	spriteType = {
@@ -106,7 +152,7 @@ spriteTypes = {
 		name = "GFX_court_view_select_advisor_bg"
 		texturefile = "gfx//interface//court_view_select_advisor_bg.dds"
 		loadType = "INGAME"
-		transparencecheck = yes	
+		transparencecheck = yes
 		alphamaskfile = "gfx//interface//diplomacy_overlay_alpha.tga"
 	}
 
@@ -122,6 +168,105 @@ spriteTypes = {
 		texturefile = "gfx//interface//country_court_view_bg.dds"
 		loadType = "INGAME"
 		transparencecheck = yes	
+	}
+	
+	spriteType = {
+		name = "GFX_local_government_view_bg"
+		texturefile = "gfx//interface//country_local_government_view_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}	
+	
+	spriteType = {
+		name = "GFX_local_government_view_bg_large"
+		texturefile = "gfx//interface//country_local_government_view_bg_large.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+
+	spriteType = {
+		name = "GFX_local_government_view_bg_huge"
+		texturefile = "gfx//interface//country_local_government_view_bg_huge.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}	
+
+	spriteType = {
+		name = "GFX_primary_culture_icon"
+		texturefile = "gfx//interface//primary_culture_icon.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_culture_slot"
+		texturefile = "gfx//interface//culture_slot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_demote_button"
+		texturefile = "gfx//interface//demote_culture_button.dds"
+		noOfFrames = 2
+	}	
+
+	spriteType = {
+		name = "GFX_select_button"
+		texturefile = "gfx//interface//select_culture_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_promote_button"
+		texturefile = "gfx//interface//promote_culture_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_culture_name_sort"
+		texturefile = "gfx//interface//culture_name_sort.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_culture_name_sort_long"
+		texturefile = "gfx//interface//culture_name_sort_long.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_culture_bonus_sort"
+		texturefile = "gfx//interface//culture_bonus_sort.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_culture_slot_mughals"
+		texturefile = "gfx//interface//culture_slot_mughals.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_culture_slot_mughals_assimilated"
+		texturefile = "gfx//interface//culture_slot_mughals_assimilated.dds"
+	}	
+	
+	
+	spriteType = {
+		name = "GFX_culture_dev_sort"
+		texturefile = "gfx//interface//culture_dev_sort.dds"
+	}
+
+	spriteType = {
+		name = "GFX_culture_dev_sort_big"
+		texturefile = "gfx//interface//culture_dev_sort_big.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_monarch_heir_crown_icon"
+		texturefile = "gfx//interface//monarch_heir_crown_icon.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_culture_star_sort"
+		texturefile = "gfx//interface//culture_star_sort.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_culture_star"
+		texturefile = "gfx//interface//culture_star.dds"
+		noOfFrames = 3
 	}
 	
 	spriteType = {
@@ -143,4 +288,29 @@ spriteTypes = {
 		name = "GFX_revolution_target"
 		texturefile = "gfx//interface//revolution_target.dds"
 	}
+
+	spriteType = {
+		name = "GFX_gender_icon"
+		texturefile = "gfx//interface//gender_icon.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_icon_primary_culture"
+		texturefile = "gfx/interface/icon_powers_administrative_tech.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_accepted_culture"
+		texturefile = "gfx/interface/icon_powers_diplomatic_tech.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_brother_culture"
+		texturefile = "gfx/interface/icon_powers_military_tech.dds"
+	}
+	
+
+	
+		
 }

@@ -8,4 +8,4 @@ tags=
  "Pony"
  }
 picture="victory.png"
-supported_version="1.16.3"
+supported_version="1.28.3"

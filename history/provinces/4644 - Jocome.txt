@@ -1,0 +1,43 @@
+# No previous file for Jocome
+
+culture = apache
+religion = totemism 
+capital = "Jocome" 
+trade_goods = unknown 
+hre = no 
+base_tax = 1
+base_production = 1
+base_manpower = 1 
+native_size = 5 
+native_ferocity = 1 
+native_hostileness = 5
+
+
+
+discovered_by = mesoamerican
+
+1001.1.1 = { discovered_by = EQU }
+1001.1.1 = { discovered_by = EQP }
+1001.1.1 = { discovered_by = EQC }
+1001.1.1 = { discovered_by = EQE }
+1001.1.1 = { owner = EQE
+		controller = EQE
+		culture = earth
+		religion = celestian
+		add_core = EQU
+		add_core = EQE
+		trade_goods = wool
+}
+
+1540.1.1 = { discovered_by = SPA } # Francisco Vasquez de Coronado
+
+1598.1.1 = {
+	owner = SPA
+	controller = SPA
+	add_core = SPA
+	is_city = yes
+	religion = catholic
+	culture = castillian
+	trade_goods = wool 
+} # First Spanish colonists, early El Paso was on this side of the river.
+1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence
